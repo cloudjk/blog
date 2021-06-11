@@ -29,7 +29,7 @@ entries:
       type: homepage
 
     - title: Deep Copy
-      url: /mydoc_javascript_deep_copy.html
+      url: /javascript_deep_copy.html
       output: web, pdf
 
     - title: Supported features
