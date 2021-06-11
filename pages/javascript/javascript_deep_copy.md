@@ -9,7 +9,7 @@ folder: javascript
 
 ## Shallow Copy
 
-### 1. Assgin array to new array !!! This does not copy an array !!!
+### 1. Assgin array to new array. This does not copy an array
 
 ```java
 const arr = [
@@ -126,5 +126,5 @@ clone({a: 37, b: {c: 3700}})
 
 ## Performance
 
-1) When it comes to shallow copy, use "slice" which is the fastest.
-2) In Deep copy, use "custom function" or "rfdc" and avoid using JSON.parse.
+### 1. When it comes to shallow copy, use "slice" which is the fastest.
+### 2. In Deep copy, use "custom function" or "rfdc" and avoid using JSON.parse.
