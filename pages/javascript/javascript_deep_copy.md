@@ -1,7 +1,7 @@
 ---
 title: Introduction
 sidebar: mydoc_sidebar
-permalink: javascript_introduction.html
+permalink: javascript_deep_copy.html
 folder: javascript
 ---
 
