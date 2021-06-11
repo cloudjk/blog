@@ -5,7 +5,7 @@ permalink: javascript_deep_copy.html
 folder: javascript
 ---
 
-![Copy](/assets/img/posts/shallow_deep_cp.png)
+{% include image.html file="shallow_deep_cp.png" %}
 
 ## Shallow Copy
 
