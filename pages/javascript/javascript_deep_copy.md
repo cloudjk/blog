@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Deep Copy
 sidebar: mydoc_sidebar
 permalink: javascript_deep_copy.html
 folder: javascript
