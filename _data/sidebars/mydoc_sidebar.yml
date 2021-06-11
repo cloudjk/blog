@@ -92,10 +92,6 @@ entries:
       url: /mydoc_conditional_logic.html
       output: web, pdf
 
-    - title: Content reuse
-      url: /mydoc_content_reuse.html
-      output: web, pdf
-
     - title: Collections
       url: /mydoc_collections.html
       output: web, pdf
