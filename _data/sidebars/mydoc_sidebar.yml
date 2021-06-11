@@ -44,6 +44,216 @@ entries:
       url: /mydoc_support.html
       output: web, pdf
 
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Introduction
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Supported features
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: About the theme author
+      url: /mydoc_about.html
+      output: web, pdf
+
+    - title: Support
+      url: /mydoc_support.html
+      output: web, pdf
+
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Introduction
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Supported features
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: About the theme author
+      url: /mydoc_about.html
+      output: web, pdf
+
+    - title: Support
+      url: /mydoc_support.html
+      output: web, pdf
+
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Introduction
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Supported features
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: About the theme author
+      url: /mydoc_about.html
+      output: web, pdf
+
+    - title: Support
+      url: /mydoc_support.html
+      output: web, pdf
+
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Introduction
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Supported features
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: About the theme author
+      url: /mydoc_about.html
+      output: web, pdf
+
+    - title: Support
+      url: /mydoc_support.html
+      output: web, pdf
+
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Introduction
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Supported features
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: About the theme author
+      url: /mydoc_about.html
+      output: web, pdf
+
+    - title: Support
+      url: /mydoc_support.html
+      output: web, pdf
+
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Introduction
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Supported features
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: About the theme author
+      url: /mydoc_about.html
+      output: web, pdf
+
+    - title: Support
+      url: /mydoc_support.html
+      output: web, pdf
+
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Introduction
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Supported features
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: About the theme author
+      url: /mydoc_about.html
+      output: web, pdf
+
+    - title: Support
+      url: /mydoc_support.html
+      output: web, pdf
+
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Introduction
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Supported features
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: About the theme author
+      url: /mydoc_about.html
+      output: web, pdf
+
+    - title: Support
+      url: /mydoc_support.html
+      output: web, pdf
+
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Introduction
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Supported features
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: About the theme author
+      url: /mydoc_about.html
+      output: web, pdf
+
+    - title: Support
+      url: /mydoc_support.html
+      output: web, pdf
+
+    - title: Get started
+      url: /index.html
+      output: web, pdf
+      type: homepage
+
+    - title: Introduction
+      url: /mydoc_introduction.html
+      output: web, pdf
+
+    - title: Supported features
+      url: /mydoc_supported_features.html
+      output: web, pdf
+
+    - title: About the theme author
+      url: /mydoc_about.html
+      output: web, pdf
+
+    - title: Support
+      url: /mydoc_support.html
+      output: web, pdf
+
   - title: Typescript
     output: web, pdf
     folderitems:
@@ -188,7 +398,7 @@ entries:
 #      url: /mydoc_git_collaboration
 #      output: web, pdf
 
-  - title: Git/Github/BitBucket
+  - title: Git/ Github/ BitBucket
     output: web, pdf
 
     folderitems:
@@ -254,6 +464,15 @@ entries:
       output: web, pdf
 
   - title: Docker
+    output: web, pdf
+
+    folderitems:
+
+    - title: Troubleshooting
+      url: /mydoc_troubleshooting.html
+      output: web, pdf
+
+  - title: English
     output: web, pdf
 
     folderitems:
