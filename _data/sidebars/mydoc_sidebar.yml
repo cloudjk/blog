@@ -262,8 +262,8 @@ entries:
     output: web
     folderitems:
 
-    - title: Tag archives overview
-      url: /mydoc_tag_archives_overview.html
+    - title: Restful
+      url: /etc_restful.html
       output: web
 
       subfolders:
