@@ -240,15 +240,6 @@ entries:
       url: /mydoc_shuffle.html
       output: web, pdf
 
-  - title: VSCode
-    output: web, pdf
-
-    folderitems:
-
-    - title: Troubleshooting
-      url: /mydoc_troubleshooting.html
-      output: web, pdf
-
   - title: Docker
     output: web, pdf
 
