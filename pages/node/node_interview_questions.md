@@ -21,7 +21,7 @@ folder: node
 
 ### 4. What is Event loop in Node.js?
 
-  ![Event Loop diagram](/assets/img/posts/eventloop.png)
+  {% include image.html file="eventloop.png" %}
 
 ### 5. Difference between dependencies and devDependencies
 
@@ -53,10 +53,11 @@ folder: node
    is that it reads a JavaScript files, execute the file and then return the exports object. For example, consider the below
    code exist in example.js:
 
-   ![export 1](/assets/img/posts/export.png)
+   {% include image.html file="export.png" %}
+   
 
    In another file, we can load this function with **require**.
-   ![export 2](/assets/img/posts/require.png)
+   {% include image.html file="require.png" %}
 
 ### 9. What is the difference between Asynchronous and Non-blocking ?
 
@@ -94,7 +95,7 @@ folder: node
    that allows one or more functions to be attached to named events emitted by the object.
    When the EventEmitter object emits an event, all of the functions attached to that specific event are callsed synchronously.
 
-  ![Event Loop diagram](/assets/img/posts/eventEmitter.png)
+   {% include image.html file="eventEmitter.png" %}
 
 ### 12. What is Streams in Node.js ?
 
@@ -106,7 +107,7 @@ folder: node
    and attach a callback. When a chunk of data is available, the readable steram emits a data event and your callback
    executes.
 
-  ![Event Loop diagram](/assets/img/posts/streams.png)
+   {% include image.html file="streams.png" %}
 
 ### 13. What is the difference between readFile vs createReadStream in Node.js ?
 
@@ -120,7 +121,7 @@ folder: node
    The crypto module in Node.js provides cryptograpic functionality that includes a set of wrappers for OpenSSL's hash,
    HMAC, cipher, decipher, sign and verify functions.
 
-  ![Event Loop diagram](/assets/img/posts/crypto.png)
+   {% include image.html file="crypto.png" %}
 
 ### 15. What is the use of DNS module in Node.js?
 
@@ -135,7 +136,7 @@ folder: node
 
    A callback is a function called at the completion of a given task. This prevents any blocking and allow other code to be run in the meantime.
 
-  ![Event Loop diagram](/assets/img/posts/callback.png)
+   {% include image.html file="callback.png" %}
 
 ### 17. What are the security mechanisms available in Node.js ?
 
@@ -190,14 +191,14 @@ folder: node
    Bind application-level middleware to an instance of the app object by using the **app.use()** and **app.method()** functions, where method is the 
    HTTP method of the request that the middleware function handles (such as GET, POST, PUT, DELETE) in lowercase.
 
-   ![Middlewares](/assets/img/posts/middlewares.png)
+   {% include image.html file="middlewares.png" %}
 
 ### 21. What is Child Process and Cluster ? What are the difference ?
 
    **Child Process** in Node.js is used to run a child process under Node.js. There are two methods to do that: **exec** and **spawn**. The example for **exec**
    is:
 
-   ![Middlewares](/assets/img/posts/childprocess_exec.png)
+   {% include image.html file="childprocess_exec.png" %}
 
    We are passing our command as our first argument of the **exec** and expect three response in the callback. _stdout_ is the output we could expect from
    the execution.  
