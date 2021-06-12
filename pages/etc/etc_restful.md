@@ -47,7 +47,7 @@ folder: etc
     Document is an object and Collection is the collection of objects.  
     Collection and document are all Resource and represented in URI.  
     Collection should be plural!!!  
-    ex) **http://restapi.example.com/sports/soccer/players/13**
+    ex) http://restapi.example.com/sports/soccer/players/13
     
 
 ### 4. HTTP Response Status Code
