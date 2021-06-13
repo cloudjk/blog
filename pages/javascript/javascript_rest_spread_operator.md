@@ -37,5 +37,4 @@ folder: javascript
   let message = 'list of colors';
   const colorArray = ['Red', 'Blue', 'Green'];
   displayColors(message, ...colorArray);
-}
 ```

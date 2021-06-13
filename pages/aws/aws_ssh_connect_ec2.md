@@ -6,4 +6,4 @@ folder: aws
 ---
 # Connecing to AWS EC2 using SSH and PEM key
 
-![aws-ssh-connect](/assets/img/posts/aws-ssh-connect.png)
+{% include image.html file="aws-ssh-connect.png" %}

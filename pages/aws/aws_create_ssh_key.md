@@ -44,7 +44,7 @@ $ ls-al ~/.ssh/
 -   authroized_keys : located in .ssh directory in remote machine and saves id_rsa.pub key value.
 -   Now we should add id_rsa.pub to $HOME/.ssh/authrozied_keys in remote server
 
-![id-rsa](/assets/img/posts/id-rsa.png)
+{% include image.html file="id-rsa.png" %}
 
 -   contents in authroized_keys should correspond to id_rsa.pub in SSH Client.
 
