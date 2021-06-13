@@ -20,4 +20,4 @@ folder: git
 [STEP 4] To get sync with original main repository, you need to clone main repository using "git remote add upstream".  
 
 
-![fork](/assets/img/posts/forkedSuccess.png)
+{% include image.html file="forkedSuccess.png" %}
