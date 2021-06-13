@@ -160,15 +160,6 @@ entries:
           url: /mysql_error.html
           output: web
 
-      subfolders:
-      - title: Postgres
-        output: web
-        subfolderitems:
-
-        - title: Formatting pages
-          url: /tag_formatting.html
-          output: web
-
 
   - title: Git/ Github/ BitBucket
     output: web, pdf
