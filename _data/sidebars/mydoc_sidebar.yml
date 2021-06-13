@@ -28,14 +28,39 @@ entries:
       output: web, pdf
       type: homepage
 
+    - title: NPM Morgan
+      url: /node_npm_morgan.html
+      output: web, pdf
+      type: homepage
+
+    - title: NPM Winston
+      url: /node_npm_winston.html
+      output: web, pdf
+      type: homepage
+
+    - title: NVM
+      url: /node_nvm.html
+      output: web, pdf
+      type: homepage
+
+    - title: Path
+      url: /node_path.html
+      output: web, pdf
+      type: homepage
+
+    - title: process.cwd() and dirname
+      url: /node_process_cwd_dirname.html
+      output: web, pdf
+      type: homepage
+
+    - title: NODE_ENV
+      url: /node_process_env_node_env.html
+      output: web, pdf
+      type: homepage
+
   - title: Javascript
     output: web, pdf
     folderitems:
-
-    - title: Get started
-      url: /index.html
-      output: web, pdf
-      type: homepage
 
     - title: Deep Copy
       url: /javascript_deep_copy.html
@@ -69,16 +94,16 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: About Ruby, Gems, Bundler, etc.
-      url: /mydoc_about_ruby_gems_etc.html
+    - title: AWS CLI Installation and Configuration
+      url: /aws_aws_cli_install.html
       output: web, pdf
 
-    - title: Install Jekyll on Mac
-      url: /mydoc_install_jekyll_on_mac.html
+    - title: Connecting to EC2 using just SSH Key
+      url: /aws_create_ssh_key.html
       output: web, pdf
 
-    - title: Install Jekyll on Windows
-      url: /mydoc_install_jekyll_on_windows.html
+    - title: Connecting to EC2 using SSH and Pem key
+      url: /aws_ssh_connect_ec2.html
       output: web, pdf
 
   - title: Linux
@@ -181,17 +206,28 @@ entries:
       url: /mydoc_workflow_maps.html
       output: web, pdf
 
-  - title: Postgres
+  - title: Database
     output: web, pdf
-
     folderitems:
-    - title: Commenting on files
-      url: /mydoc_commenting_on_files.html
-      output: web, pdf
+    
+      subfolders:
+      - title: MySQL
+        output: web
+        subfolderitems:
 
-#    - title: Git collaboration
-#      url: /mydoc_git_collaboration
-#      output: web, pdf
+        - title: Formatting pages
+          url: /tag_formatting.html
+          output: web
+
+      subfolders:
+      - title: Postgres
+        output: web
+        subfolderitems:
+
+        - title: Formatting pages
+          url: /tag_formatting.html
+          output: web
+
 
   - title: Git/ Github/ BitBucket
     output: web, pdf
@@ -273,6 +309,10 @@ entries:
 
     - title: Restful
       url: /etc_restful.html
+      output: web
+
+    - title: Webservice
+      url: /etc_webservice.html
       output: web
 
       subfolders:
