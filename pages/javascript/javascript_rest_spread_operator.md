@@ -1,7 +1,7 @@
 ---
 title: Rest Operator / Spread Operator
 sidebar: mydoc_sidebar
-permalink: javascript_deep_copy.html
+permalink: javascript_rest_spread_operator.html
 folder: javascript
 ---
 

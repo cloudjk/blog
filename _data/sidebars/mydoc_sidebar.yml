@@ -79,7 +79,7 @@ entries:
       output: web, pdf
 
     - title: rest Operator / spread Operator
-      url: /javascript_object_literals.html
+      url: /javascript_rest_spread_operator.html
       output: web, pdf
 
     - title: this and bind
