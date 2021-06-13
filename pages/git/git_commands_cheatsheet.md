@@ -6,7 +6,7 @@ folder: git
 ---
 ## GIT COMMANDS
 
-![git](/assets/img/posts/git.png)
+{% include image.html file="git.png" %}
 
 ### Remote Branch Tracking
 
