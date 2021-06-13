@@ -6,13 +6,6 @@ folder: etc
 ---
 # Homebrew
 
-- [Homebrew](#homebrew)
-  - [What is Homebrew?](#what-is-homebrew)
-  - [First to install](#first-to-install)
-  - [install commands](#install-commands)
-  - [remove commands](#remove-commands)
-  - [other commands](#other-commands)
-
 ## What is Homebrew?
 
 > Package manger for Mac
