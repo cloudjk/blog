@@ -1,8 +1,8 @@
 ---
-layout: post
-title: expression 50 Part 4
-author: cloudjk
-tags: [english, expression, part4]
+title: expression 50 part 4
+sidebar: mydoc_sidebar
+permalink: english_crystal_expression_4.html
+folder: english
 ---
 ### 앞으로 살면서 도움이 될거야.
 

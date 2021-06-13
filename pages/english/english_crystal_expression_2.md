@@ -1,8 +1,8 @@
 ---
-layout: post
 title: expression 50 part 2
-author: cloudjk
-tags: [english, expression]
+sidebar: mydoc_sidebar
+permalink: english_crystal_expression_2.html
+folder: english
 ---
 
 ### (후회) 이렇게 될거란걸 알았어야 했는데.

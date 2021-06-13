@@ -1,8 +1,8 @@
 ---
-layout: post
 title: expression 50 part 6
-author: cloudjk
-tags: [english, expression]
+sidebar: mydoc_sidebar
+permalink: english_crystal_expression_6.html
+folder: english
 ---
 ### 어디를 가든 난 아무데나 괜찮아
 

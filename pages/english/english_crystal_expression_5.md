@@ -1,10 +1,9 @@
 ---
-layout: post
 title: expression 50 part 5
-author: cloudjk
-tags: [english, expression]
+sidebar: mydoc_sidebar
+permalink: english_crystal_expression_5.html
+folder: english
 ---
-
 ### 질문있으시면 편히 전화 주세요
 
     Feel free to call me if you have any question. -> questions

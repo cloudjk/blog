@@ -1,8 +1,8 @@
 ---
-layout: post
 title: expression 50 part 7
-author: cloudjk
-tags: [english, expression]
+sidebar: mydoc_sidebar
+permalink: english_crystal_expression_7.html
+folder: english
 ---
 ### 전 여럿이서 저녁 먹는 거 별로 안좋아 해요.
 

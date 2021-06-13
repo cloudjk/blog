@@ -1,8 +1,8 @@
 ---
-layout: post
 title: expression 50 part 3
-author: cloudjk
-tags: [english, expression]
+sidebar: mydoc_sidebar
+permalink: english_crystal_expression_3.html
+folder: english
 ---
 
 ### 좋은 하루 보내고 있길 바라.
