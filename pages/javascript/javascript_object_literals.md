@@ -28,7 +28,7 @@ console.log(name.sname);
 console.log(name.fullname());
 ```
 
-#### 4.object key can be substituted by variable
+#### 4. object key can be substituted by variable
 ```java
 const key = "last name";
 const obj = {
