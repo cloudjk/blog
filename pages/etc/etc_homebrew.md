@@ -1,6 +1,6 @@
 ---
 title: Homebrew
-sidebar: etc_homebrew
+sidebar: mydoc_sidebar
 permalink: etc_homebrew.html
 folder: etc
 ---

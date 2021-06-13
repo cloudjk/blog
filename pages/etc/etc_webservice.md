@@ -1,6 +1,6 @@
 ---
 title: Webservice
-sidebar: mydoc_webservice
+sidebar: mydoc_sidebar
 permalink: etc_webservice.html
 folder: etc
 ---
