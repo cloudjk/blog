@@ -224,7 +224,7 @@ entries:
       type: homepage
 
       subfolders:
-        - title: MySQL
+      - title: MySQL
         output: web
         subfolderitems:
 
