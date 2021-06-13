@@ -1,8 +1,8 @@
 ---
-layout: post
 title: Object Literals
-author: cloudjk
-tags: [javascript, object, literal]
+sidebar: mydoc_sidebar
+permalink: javascript_object_literals.html
+folder: javascript
 ---
 
 ### Object Literals

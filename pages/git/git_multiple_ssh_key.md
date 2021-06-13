@@ -1,10 +1,9 @@
 ---
-layout: post
 title: Multiple SSH Keys settings for different github account
-author: cloudjk
-tags: [ssh, github]
+sidebar: mydoc_sidebar
+permalink: git_multiple_ssh_key.html
+folder: git
 ---
-
 ## Create different ssh keys
 ```bash
 ssh-keygen -t rsa -C "your_email@youremail.com"

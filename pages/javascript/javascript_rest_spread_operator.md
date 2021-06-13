@@ -1,8 +1,8 @@
 ---
-layout: post
 title: Rest Operator / Spread Operator
-author: cloudjk
-tags: [javascript, rest, spread, operator]
+sidebar: mydoc_sidebar
+permalink: javascript_deep_copy.html
+folder: javascript
 ---
 
 ### Rest Operator (Combine!)

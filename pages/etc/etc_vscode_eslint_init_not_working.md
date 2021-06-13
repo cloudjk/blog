@@ -1,11 +1,9 @@
 ---
-layout: post
 title: VS Code Eslint init not working
-subtitle: VS Code Eslint init not working
-author: cloudjk
-tags: [vscode, eslint]
+sidebar: mydoc_sidebar
+permalink: etc_vscode_eslint_init_not_working.html
+folder: etc
 ---
-
 ### When eslint --init is not working in VS Code
 
 ```java

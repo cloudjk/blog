@@ -1,10 +1,9 @@
 ---
-layout: post
 title: Git commands cheatsheet
-author: cloudjk
-tags: [git, cheatsheet]
+sidebar: mydoc_sidebar
+permalink: git_commands_cheatsheet.html
+folder: git
 ---
-
 ## GIT COMMANDS
 
 ![git](/assets/img/posts/git.png)

@@ -1,10 +1,9 @@
 ---
-layout: post
 title: Linux Command Line Basic
-author: cloudjk
-tags: [linux, command, cli]
+sidebar: mydoc_sidebar
+permalink: linux_command_line_basic.html
+folder: linux
 ---
-
 ## ls
 ```bash
 man ls      # show all options

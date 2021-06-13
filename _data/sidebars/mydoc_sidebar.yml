@@ -23,27 +23,27 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Interview Questions
+    - title: interview Questions
       url: /node_interview_questions.html
       output: web, pdf
       type: homepage
 
-    - title: NPM Morgan
+    - title: npm morgan
       url: /node_npm_morgan.html
       output: web, pdf
       type: homepage
 
-    - title: NPM Winston
+    - title: npm winston
       url: /node_npm_winston.html
       output: web, pdf
       type: homepage
 
-    - title: NVM
+    - title: nvm
       url: /node_nvm.html
       output: web, pdf
       type: homepage
 
-    - title: Path
+    - title: path
       url: /node_path.html
       output: web, pdf
       type: homepage
@@ -53,7 +53,7 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: NODE_ENV
+    - title: node_env
       url: /node_process_env_node_env.html
       output: web, pdf
       type: homepage
@@ -62,20 +62,28 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: Deep Copy
+    - title: deep copy
       url: /javascript_deep_copy.html
       output: web, pdf
 
-    - title: Supported features
-      url: /mydoc_supported_features.html
+    - title: advantages and pitfalls of arrow function
+      url: /javascript_advantages_pitfalls_arrowfunction.html
       output: web, pdf
 
-    - title: About the theme author
-      url: /mydoc_about.html
+    - title: map / reduce / filter
+      url: /javascript_map_reduce_filter.html
       output: web, pdf
 
-    - title: Support
-      url: /mydoc_support.html
+    - title: object Literals
+      url: /javascript_object_literals.html
+      output: web, pdf
+
+    - title: rest Operator / spread Operator
+      url: /javascript_object_literals.html
+      output: web, pdf
+
+    - title: this and bind
+      url: /javascript_this_and_bind.html
       output: web, pdf
 
   - title: Typescript
@@ -94,36 +102,36 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: AWS CLI Installation and Configuration
+    - title: cli installation and configuration
       url: /aws_aws_cli_install.html
       output: web, pdf
 
-    - title: Connecting to EC2 using just SSH Key
+    - title: connecting to EC2 using just SSH Key
       url: /aws_create_ssh_key.html
       output: web, pdf
 
-    - title: Connecting to EC2 using SSH and Pem key
+    - title: connecting to EC2 using SSH and pem key
       url: /aws_ssh_connect_ec2.html
       output: web, pdf
 
   - title: Linux
     output: web, pdf
-
     folderitems:
-    - title: Pages
-      url: /mydoc_pages.html
+
+    - title: bash
+      url: /linux_bash.html
       output: web, pdf
 
-    - title: Posts
-      url: /mydoc_posts.html
+    - title: linux cli basic
+      url: /linux_command_line_basic.html
       output: web, pdf
 
-    - title: Lists
-      url: /mydoc_lists.html
+    - title: shell scripting basic
+      url: /linux_shell_scripting_basic.html
       output: web, pdf
 
-    - title: Conditional logic
-      url: /mydoc_conditional_logic.html
+    - title: list installed yum list
+      url: /linux_yum.html
       output: web, pdf
 
     - title: Collections
@@ -209,14 +217,19 @@ entries:
   - title: Database
     output: web, pdf
     folderitems:
-    
+
+    - title: normalization
+      url: /db_normalization.html
+      output: web, pdf
+      type: homepage
+
       subfolders:
-      - title: MySQL
+        - title: MySQL
         output: web
         subfolderitems:
 
-        - title: Formatting pages
-          url: /tag_formatting.html
+        - title: mysql error
+          url: /mysql_error.html
           output: web
 
       subfolders:
@@ -233,28 +246,28 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: Build arguments
-      url: /mydoc_build_arguments.html
+    - title: adding SSH key to gitHub
+      url: /git_adding_ssh_key_to_github.html
       output: web, pdf
 
-    - title: Themes
-      url: /mydoc_themes.html
+    - title: set up Bitbucket SSH on macOS/Linux
+      url: /git_bitbucket_setup_ssh.html
       output: web, pdf
 
-    - title: Generating PDFs
-      url: /mydoc_generating_pdfs.html
+    - title: git commands cheatsheet
+      url: /git_commands_cheatsheet.html
       output: web, pdf
 
-    - title: Help APIs and UI tooltips
-      url: /mydoc_help_api.html
+    - title: git fork and clone
+      url: /git_fork_clone_diifference.html
       output: web, pdf
 
-    - title: Search configuration
-      url: /mydoc_search_configuration.html
+    - title: ssh key for multiple github account
+      url: /git_multiple_ssh_key.html
       output: web, pdf
 
-    - title: iTerm profiles
-      url: /mydoc_iterm_profiles.html
+    - title: git patch
+      url: /git_patch.html
       output: web, pdf
 
     - title: Pushing builds to server
@@ -287,32 +300,82 @@ entries:
 
   - title: Docker
     output: web, pdf
-
     folderitems:
 
-    - title: Troubleshooting
-      url: /mydoc_troubleshooting.html
+    - title: docker
+      url: /docker_basic_concept.html
       output: web, pdf
 
   - title: English
     output: web, pdf
-
     folderitems:
 
-    - title: Troubleshooting
-      url: /mydoc_troubleshooting.html
+    - title: expression 50 part 1
+      url: /english_crystal_expression_1.html
+      output: web, pdf
+
+    - title: expression 50 part 2
+      url: /english_crystal_expression_2.html
+      output: web, pdf
+
+    - title: expression 50 part 3
+      url: /english_crystal_expression_3.html
+      output: web, pdf
+
+    - title: expression 50 part 4
+      url: /english_crystal_expression_4.html
+      output: web, pdf
+
+    - title: expression 50 part 5
+      url: /english_crystal_expression_5.html
+      output: web, pdf
+
+    - title: expression 50 part 6
+      url: /english_crystal_expression_6.html
+      output: web, pdf
+
+    - title: expression 50 part 7
+      url: /english_crystal_expression_7.html
+      output: web, pdf
+
+    - title: expression 50 part 8
+      url: /english_crystal_expression_8.html
+      output: web, pdf
+
+    - title: english korean BBQ
+      url: /english_korean_bbq_first.html
       output: web, pdf
 
   - title: ETC
     output: web
     folderitems:
 
-    - title: Restful
+    - title: restful
       url: /etc_restful.html
       output: web
 
-    - title: Webservice
+    - title: curl
+      url: /etc_webseetc_curlrvice.html
+      output: web
+
+    - title: homebrew
+      url: /etc_homebrew.html
+      output: web
+
+    - title: vscode eslint init not working
+      url: /etc_vscode_eslint_init_not_working.html
+      output: web
+
+    - title: vscode prettier eslint config setting
+      url: /etc_vscode_prettier_eslint_setting.html
+      output: web
+
+    - title: webservice
       url: /etc_webservice.html
+      output: web
+
+    - title: yarn global installed path
+      url: /etc_yarn_global_installed_path.html
       output: web
 
       subfolders:

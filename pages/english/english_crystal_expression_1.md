@@ -1,10 +1,9 @@
 ---
-layout: post
 title: expression 50 part 1
-author: cloudjk
-tags: [english, expression]
+sidebar: mydoc_sidebar
+permalink: english_crystal_expression_1.html
+folder: english
 ---
-
 ### 내일 이어서 계속하자.
 
     Let's pick up tomorrow. -> Let's pick this up tomorrow.

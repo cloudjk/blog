@@ -1,11 +1,9 @@
 ---
-layout: post
 title: Homebrew
-subtitle: Homebrew
-author: cloudjk
-tags: [java, homebrew]
+sidebar: etc_homebrew
+permalink: etc_homebrew.html
+folder: etc
 ---
-
 # Homebrew
 
 - [Homebrew](#homebrew)

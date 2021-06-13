@@ -1,8 +1,8 @@
 ---
-layout: post
 title: Englishman - English people try Korean BBQ for the first time
-author: cloudjk
-tags: [englishman, korea, bbq, first]
+sidebar: mydoc_sidebar
+permalink: english_korean_bbq_first.html
+folder: english
 ---
 
 1.그정도면 비슷해요

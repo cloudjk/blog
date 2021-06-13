@@ -1,10 +1,9 @@
 ---
-layout: post
 title: Yarn global installed path in MAC
-author: cloudjk
-tags: [yarn, global, installed, path]
+sidebar: mydoc_sidebar
+permalink: etc_yarn_global_installed_path.html
+folder: etc
 ---
-
 ## Yarn global installed path
 
 ```bash

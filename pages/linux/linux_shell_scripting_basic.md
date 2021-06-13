@@ -1,8 +1,8 @@
 ---
-layout: post
 title: Shell Scripting Basic
-author: cloudjk
-tags: [shell]
+sidebar: mydoc_sidebar
+permalink: linux_shell_scripting_basic.html
+folder: linux
 ---
 ## Check shell type operating system supports.
 

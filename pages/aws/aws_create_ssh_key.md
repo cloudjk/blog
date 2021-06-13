@@ -1,9 +1,8 @@
 ---
-layout: post
 title: Connecting AWS EC2 using just SSH Key
-subtitle: AWS Connecting EC2 using just SSH Key
-author: cloudjk
-tags: [aws, connect, ec2, ssh, without, pem]
+sidebar: mydoc_sidebar
+permalink: aws_create_ssh_key.html
+folder: aws
 ---
 
 # Create SSH Key

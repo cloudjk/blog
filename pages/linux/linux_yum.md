@@ -1,10 +1,9 @@
 ---
-layout: post
 title: How To List all repository packages with Yum Command
-author: cloudjk
-tags: [linux, yum]
+sidebar: mydoc_sidebar
+permalink: linux_yum.html
+folder: linux
 ---
-
 # How to List all repository packages with Yum Command
 
 I have added a new repository into my repositories and I want to list all packages. Find the total count of packages and filter some of the packages I am interested in. And now we can start the process.

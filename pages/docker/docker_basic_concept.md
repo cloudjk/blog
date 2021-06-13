@@ -1,11 +1,9 @@
 ---
-layout: post
 title: Docker Basic Concept
-subtitle: Docker Basic Concept
-author: cloudjk
-tags: [docker, basic, concept]
+sidebar: mydoc_sidebar
+permalink: docker_basic_concept.html
+folder: docker
 ---
-
 ### Containers vs Virtual Machine
 
 ![Container_vs_VM](/assets/img/posts/container-vm.png)

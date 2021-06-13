@@ -1,9 +1,10 @@
 ---
-layout: post
 title: Adding SSH Key to GitHub
-author: cloudjk
-tags: [ssh]
+sidebar: mydoc_sidebar
+permalink: git_adding_ssh_key_to_github.html
+folder: git
 ---
+
 1. SSH enables the user to log in to github and submit the request without username and password.  
 
 STEP1) Generate new SSH key  

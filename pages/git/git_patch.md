@@ -1,10 +1,9 @@
 ---
-layout: post
 title: How to Patch easily in Git
-author: cloudjk
-tags: [git, patch]
+sidebar: mydoc_sidebar
+permalink: git_patch.html
+folder: git
 ---
-
 ### 1. How to create git patch and apply
 
 For example, bugfix/TFH-346 branch is fixed from tfclient-master

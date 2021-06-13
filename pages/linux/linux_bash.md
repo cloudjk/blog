@@ -1,11 +1,9 @@
 ---
-layout: post
-title: Linux Bash
-subtitle: Linux Bash
-author: cloudjk
-tags: [linux, bash]
+title: Bash
+sidebar: mydoc_sidebar
+permalink: linux_bash.html
+folder: linux
 ---
-
 ### Set variable only for current shell
 
 ```bash

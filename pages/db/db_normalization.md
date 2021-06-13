@@ -1,9 +1,8 @@
 ---
-layout: post
 title: Database Normalization
-subtitle: normalization
-author: cloudjk
-tags: [database, db, normalization]
+sidebar: mydoc_sidebar
+permalink: db_normalization.html
+folder: javascript
 ---
 
 [Normalization](https://beginnersbook.com/2015/05/normalization-in-dbms/)

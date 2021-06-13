@@ -1,8 +1,8 @@
 ---
-layout: post
-title: Simplify your Javascript - Use .map(), .reduce(), and .filter()
-author: cloudjk
-tags: [javascript, map, reduce, filter, some, every, find]
+title: Use .map(), .reduce(), and .filter()
+sidebar: mydoc_sidebar
+permalink: javascript_map_reduce_filter.html
+folder: javascript
 ---
 ## .map()
 

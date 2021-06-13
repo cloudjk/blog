@@ -1,9 +1,10 @@
 ---
-layout: post
 title: What is Fork and how to use it ?
-author: cloudjk
-tags: [fork]
+sidebar: mydoc_sidebar
+permalink: git_fork_clone_diifference.html
+folder: git
 ---
+
 1. What is Github Fork?
 
 1) Fork creates a copy of the repository of open source library on Github.  

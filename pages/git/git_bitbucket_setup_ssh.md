@@ -1,10 +1,9 @@
 ---
-layout: post
 title: Set up Bitbucket SSH on macOS/Linux
-author: cloudjk
-tags: [bitbucket, ssh, macos, linux, config]
+sidebar: mydoc_sidebar
+permalink: git_bitbucket_setup_ssh.html
+folder: git
 ---
-
 # How to set up SSH on macOS/Linux
 
 Use this section to create a default identity and SSH key on macOS or Linux. By default, the system adds keys to the /Users/{yourname}/.ssh directory on macOS and /home/{username}/.ssh on Linux.
