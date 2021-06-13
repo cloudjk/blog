@@ -6,7 +6,7 @@ folder: docker
 ---
 ### Containers vs Virtual Machine
 
-![Container_vs_VM](/assets/img/posts/container-vm.png)
+{% include image.html file="container-vm.png" %}
 
 ### Container vs Image
 
