@@ -4,25 +4,9 @@ sidebar: mydoc_sidebar
 permalink: english_crystal_expression_6.html
 folder: english
 ---
-### 어디를 가든 난 아무데나 괜찮아
-
-    Anywhere. It doesn't matter to me.
-
-### 난 뭐든 다 좋아
-
-    I'm fine(good) with whatever.
-
 ### (최소한 그 정도는 내가 해주고 싶으니) 거절마
 
     I won't take no for an answer
-
-### 넌 어떨지 모르겠지만 난 술한잔 마시고 싶어
-
-    I don't know about you, but I could use a drink.
-
-### 달달한게 당겨
-
-    I'm craving some sweets.
 
 ### 바쁘신거 알지만 잠깐이라도 저 좀 끼워주시면 안될까요
 
@@ -47,10 +31,6 @@ May I have a word (with you)?
 ### 아침까지 당연히 끝낼거라 생각하고 있을께
 
     I expect it done by the morning.
-
-### 누구 올 사람 있어?
-
-    Are you expecting someone?
 
 ### 끝나자 마자 전화할께
 

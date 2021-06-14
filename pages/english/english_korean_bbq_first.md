@@ -41,48 +41,6 @@ Usually we cut off the fat.
 In Korea, you embrace the fat. You embrace the flavour.
 ```
 
-7.불 붙었다. 불 켰어요.
-
-```bash
-It's lit. We are lit.
-```
-
-8.대박
-
-```bash
-Flipping heck.
-```
-
-9.우리집 냄새 엄청 나겠다.
-
-```bash
-My flat is gonna stink.
-```
-
-10.젬마가 엄청 화낼 것 같아.
-
-```bash
-Jemma's gonna be so mad.
-```
-
-11.그러면 마늘을 구워서 냄새를 좀 중화시켜 보자.
-
-```bash
-We will cook us some garlic too to cover the smell.
-```
-
-12.가운데 이건 뭐야?
-
-```bash
-What's this bit in the middle?
-```
-
-13.실용적이네. 꽤 편리하지?
-
-```bash
-That's nifty. Pretty handy eh?
-```
-
 14.딱봐도 마늘이네. 근데 (영국에선) 견과류 굽듯이 굽진 않지.
 
 ```bash

@@ -4,9 +4,6 @@ sidebar: mydoc_sidebar
 permalink: english_crystal_expression_4.html
 folder: english
 ---
-### 앞으로 살면서 도움이 될거야.
-
-    It will help you down the road.
 
 ### 장기적으로 이건 내게 도움이 될거야.
 
@@ -47,7 +44,3 @@ folder: english
 ### 나이에 비해서 이력서가 훌륭한걸요.
 
     Impressive CV for someone your age.
-
-### 나 한학기 휴학하고 어학연수/유학 갔어.
-
-    I took a semester off and studied abroad.
