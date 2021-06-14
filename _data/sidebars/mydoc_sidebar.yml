@@ -221,10 +221,6 @@ entries:
       url: /english_crystal_expression_1.html
       output: web, pdf
 
-    - title: expression 50 part 2
-      url: /english_crystal_expression_2.html
-      output: web, pdf
-
     - title: expression 50 part 3
       url: /english_crystal_expression_3.html
       output: web, pdf
