@@ -1,8 +1,8 @@
 ---
 title: Database Normalization
 sidebar: mydoc_sidebar
-permalink: db_normalization.html
-folder: javascript
+permalink: database_normalization.html
+folder: database
 ---
 
 [Normalization](https://beginnersbook.com/2015/05/normalization-in-dbms/)
