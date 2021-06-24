@@ -168,7 +168,7 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: ssh key for multiple github account
+    - title: ssh setting for multiple github accounts
       url: /git_multiple_ssh_key.html
       output: web, pdf
 
