@@ -9,10 +9,21 @@ folder: english
 
     I will be in touch by next Friday.
 
-### 널 위해 뭐 좀 가져왔어/ 사왔어.
+### 네가 내릴 결정이 아냐.
 
-    I got you something.
+    That is not your decision to make.
+### (도움 준 상대에게 당신 없이는 할 수 없었을 거란 뉘앙스) 다 잘 된 건 너 덕분이야.
 
-### 방금 본사로부터 전화 받았어.
+    It couldn't have done without you.
 
-    I just got a call from corporate.
+### 그 정보좀 전달해줄 수 있어?
+
+    Can you forward me the info?
+
+### 아침까지 당연히 끝낼거라 생각하고 있을께
+
+    I expect it done by the morning.
+
+### 앞으로 저부터 더 연락 자주 할께요.
+
+    I, for one, am gonna be much better about keeping in touch.

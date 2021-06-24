@@ -193,26 +193,6 @@ entries:
       url: /english_crystal_expression_1.html
       output: web, pdf
 
-    - title: expression 50 part 3
-      url: /english_crystal_expression_3.html
-      output: web, pdf
-
-    - title: expression 50 part 4
-      url: /english_crystal_expression_4.html
-      output: web, pdf
-
-    - title: expression 50 part 5
-      url: /english_crystal_expression_5.html
-      output: web, pdf
-
-    - title: expression 50 part 6
-      url: /english_crystal_expression_6.html
-      output: web, pdf
-
-    - title: expression 50 part 7
-      url: /english_crystal_expression_7.html
-      output: web, pdf
-
     - title: expression 50 part 8
       url: /english_crystal_expression_8.html
       output: web, pdf

@@ -5,18 +5,6 @@ permalink: english_korean_bbq_first.html
 folder: english
 ---
 
-1.그정도면 비슷해요
-
-```bash
-close enough
-```
-
-2.신기하다 왜냐면 이 냄새 맡으니까 한국에서의 추억이 생각나니까.
-
-```bash
-It's interesting because its smells are reminiscent of times in Korea.
-```
-
 3.한국만큼 맛있지는 않겠지만, 엄청 좋아 보이는 삼겹살로 준비했어요.
 
 ```bash
