@@ -168,36 +168,8 @@ entries:
     output: web, pdf
 
     folderitems:
-    - title: adding SSH key to gitHub
-      url: /git_adding_ssh_key_to_github.html
-      output: web, pdf
-
-    - title: set up Bitbucket SSH on macOS/Linux
-      url: /git_bitbucket_setup_ssh.html
-      output: web, pdf
-
-    - title: git commands cheatsheet
-      url: /git_commands_cheatsheet.html
-      output: web, pdf
-
-    - title: git fork and clone
-      url: /git_fork_clone_diifference.html
-      output: web, pdf
-
     - title: ssh key for multiple github account
       url: /git_multiple_ssh_key.html
-      output: web, pdf
-
-    - title: git patch
-      url: /git_patch.html
-      output: web, pdf
-
-    - title: Pushing builds to server
-      url: /mydoc_push_build_to_server.html
-      output: web, pdf
-
-    - title: Publishing on Github Pages
-      url: /mydoc_publishing_github_pages.html
       output: web, pdf
 
   - title: TDD
