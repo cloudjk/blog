@@ -12,6 +12,7 @@ folder: english
 ### 네가 내릴 결정이 아냐.
 
     That is not your decision to make.
+
 ### (도움 준 상대에게 당신 없이는 할 수 없었을 거란 뉘앙스) 다 잘 된 건 너 덕분이야.
 
     It couldn't have done without you.
