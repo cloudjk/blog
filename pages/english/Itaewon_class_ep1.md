@@ -1,7 +1,7 @@
 ---
 title: expression 50 part 1
 sidebar: mydoc_sidebar
-permalink: english_crystal_expression_1.html
+permalink: itaewon_class_ep1.html
 folder: english
 ---
 
