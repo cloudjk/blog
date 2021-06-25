@@ -93,107 +93,111 @@ folder: english
 
     Your boss sounds a little irresponsible.
 
-### 
+### 죽으라는 말을 듣고 그런 생각이 들었다구요
 
-    All the efforts that you have to make
+    That's what you thought when he told you to just die?
 
-### 
+### 상담은 그렇게 하는 거예요
 
-    All the efforts that you have to make
+    That's how counseling shoud be done.
 
-### 
+### 술한잔 하면서 진솔하게
 
-    All the efforts that you have to make
+    An open, candid conversation over a drink.
 
-### 
+### 벌써 가시게요?
 
-    All the efforts that you have to make
+    You're leaving already?
 
-### 
+### 다음에 한번 놀러갈께요
 
-    All the efforts that you have to make
+    I'll come by sometime.
 
-### 
+### 꼭 오세요. 서비스 드릴께.
 
-    All the efforts that you have to make
+    You have to. I'll give you lots of freebies.
 
-### 
+### 그 한가운데 용산
 
-    All the efforts that you have to make
+    In the center of it, there's a district called Yongsan.
 
-### 
+### 가장 핫한 키워드
 
-    All the efforts that you have to make
+    the hottest buzzword
 
-### 
+### 3위
 
-    All the efforts that you have to make
+    the third highest
 
-### 
+### 각자의 가치관으로 자신의 삶을 사는 우리들의 이야기
 
-    All the efforts that you have to make
+    The story of us living our lives with our own values.
 
-### 
+### 학기초의 어느날
 
-    All the efforts that you have to make
+    One day at the beginning of semester
 
-### 
+### 똑바로 들어
 
-    All the efforts that you have to make
+    hold it up properly
 
-### 
+### 한방울 흘리면 한대씩이야
 
-    All the efforts that you have to make
+    I'll smack you guys for each drop that spills.
 
-### 
+### 말도 안되는 소리 하지 마.
 
-    All the efforts that you have to make
+    Give me a break
 
-### 
+### 빈대처럼 부모님께 빈대붙다
 
-    All the efforts that you have to make
+    mooch off their parents like leeches.
 
-### 
+### 그들은 아무짝에 쓸모 없는 쓰레기 같은 인간이 될거야
 
-    All the efforts that you have to make
+    They will become useless scumbags.
 
-### 
+### 난 때때로 머리에서 삐소리를 들어
 
-    All the efforts that you have to make
+    I sometimes hear a bleep inside my head.
 
-### 
+### 나한테 반항하는 거야?
 
-    All the efforts that you have to make
+    Is this your way of rebelling against me?
 
-### 
+### 미친놈 아냐
 
-    All the efforts that you have to make
+    What a lunatic
 
-### 
+### 다시 채워 올까요?
 
-    All the efforts that you have to make
+    Shall I fill it up again?
 
-### 
+### 조심하는게 좋을꺼야
 
-    All the efforts that you have to make
+    You'd better watch out.
 
-### 
+### 이상하게 외로워 보이지 않았어
 
-    All the efforts that you have to make
+    For some reason, he never seemed lonley.
 
-### 
+### 난 어느새 그를 좋아하게 되었어.
 
-    All the efforts that you have to make
+    Without even realizing it, I had developed a crush on him.
 
-### 
+### 게 다음주에 전학가.
 
-    All the efforts that you have to make
+    He's transfering to another school next week.
 
-### 
+### 고백을 할까 말까 고민입니다.
 
-    All the efforts that you have to make
+    Shall I tell him how i feel or not? I'm torn.
 
-### 
+### 풋풋한 짝사랑 중인 여학생의 사연입니다.
 
-    All the efforts that you have to make
+    It was a cute story from a girl who has a crush on her classmate.
+
+### 어떤 선택이 정답일 지는 몰라도 내가 무러 할 수 있는지는 알수가 있더라구요
+
+    I'm not sure what would be the right choice to make, but your inner compass usually tells you what it is that you want to do.
 
