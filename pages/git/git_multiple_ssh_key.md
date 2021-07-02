@@ -1,48 +1,30 @@
 ---
-title: Multiple SSH Keys settings for different github account
+title: SSH Key setting for multiple github accounts
 sidebar: mydoc_sidebar
 permalink: git_multiple_ssh_key.html
 folder: git
 ---
-## Create different ssh keys
+## 1. Create multiple host in ~/.ssh/config
 ```bash
-ssh-keygen -t rsa -C "your_email@youremail.com"
+# Default Github
+Host github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+
+Host probaka-github.com
+  HostName github.com
+  User git
+  IdentityFile ~/.ssh/probaka76
 ```
 
-## Add to ssh key agents
+## 2. Must change git clone address like below to use non-default github ssh host
 ```bash
-ssh-add ~/.ssh/id_rsa_activehacker
-ssh-add ~/.ssh/id_rsa_jexchan
+# git: use git as a user always
+# probaka-github.com: name of the host set in config. for default github host, just use github@com
+# probaka76: github account
+# test.git : name of the repository
+git@probaka-github.com:probaka76/test.git
 ```
 
-## Delete all cached keys
-```bash
-ssh-add -D
-```
-
-## Check saved keys
-```bash
-ssh-add -l
-```
-
-## add to ssh config 
-```bash
-#activehacker account
-Host github.com.activehacker
-	HostName github.com
-	User git
-	IdentityFile ~/.ssh/id_rsa_activehacker
-
-#jexchan account
-Host github.com.jexchan
-	HostName github.com
-	User git
-	IdentityFile ~/.ssh/id_rsa_jexchan
-```
-
-## Important!!! change git clone address using config Host
-```bash
-git clone git@github.com.activehacker:activehacker/gfs.git gfs_jexchan
-as oppose to
-git clone git@github.com:activehacker/gfs.git gfs_jexchan
-```
+## 3. Do not use ssh-add! This only allows to interact with github until session expires.
