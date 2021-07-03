@@ -193,12 +193,12 @@ entries:
       url: /english_crystal_expression_1.html
       output: web, pdf
 
-    - title: Itaewon class ep1
+    - title: Itaewon class ep1 01
       url: /itaewon_class_ep1.html
       output: web, pdf
 
-    - title: english korean BBQ
-      url: /english_korean_bbq_first.html
+    - title: Itaewon class ep1 02
+      url: /itaewon_class_ep2.html
       output: web, pdf
 
   - title: ETC
