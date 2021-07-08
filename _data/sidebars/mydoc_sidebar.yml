@@ -189,10 +189,6 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: expression 50 part 1
-      url: /english_crystal_expression_1.html
-      output: web, pdf
-
     - title: Itaewon class ep1 01
       url: /itaewon_class_ep1.html
       output: web, pdf
