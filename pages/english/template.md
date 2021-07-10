@@ -1,7 +1,7 @@
 ---
 title: expression 50 part 1 03
 sidebar: mydoc_sidebar
-permalink: itaewon_class_ep3.html
+permalink: template.html
 folder: english
 ---
 ### 
