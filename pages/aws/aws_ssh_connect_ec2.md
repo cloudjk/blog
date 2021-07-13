@@ -4,7 +4,6 @@ sidebar: mydoc_sidebar
 permalink: aws_ssh_connect_ec2.html
 folder: aws
 ---
-# Connecting to AWS EC2 using Pem key via .ssh/config
 
 ```bash
 Host <an easy to remember name for the server>
