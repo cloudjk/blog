@@ -106,10 +106,6 @@ entries:
       url: /aws_aws_cli_install.html
       output: web, pdf
 
-    - title: connecting to EC2 using just SSH Key
-      url: /aws_create_ssh_key.html
-      output: web, pdf
-
     - title: connecting to EC2 using SSH and pem key
       url: /aws_ssh_connect_ec2.html
       output: web, pdf
