@@ -102,7 +102,7 @@ folder: aws
 - Embedded within your application
 
 
-### AWS CLI Handson
+### AWS CLI Hands-On
 
 - Download and install AWS CLI latest stable version
 - Configure AWS CLI
