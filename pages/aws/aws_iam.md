@@ -82,6 +82,7 @@ folder: aws
 - **Access Keys are secret, just like a password. Don't share them**
 - Access Key ID = username
 - Secret Access Key = password
+- **Do not use root user to create security credentials**
 
 ### What's the AWS CLI?
 
@@ -99,3 +100,20 @@ folder: aws
 - Language-specific APIs (set of libraries)
 - Enables you to access and manage AWS services programmatically
 - Embedded within your application
+
+
+### AWS CLI Handson
+
+- Download and install AWS CLI latest stable version
+- Configure AWS CLI
+
+```bash
+# check AWS CLI is installed
+aws --version
+
+# to configure add AWS Access Key Id and Secret Access Key
+aws configure
+
+# run command you want to check
+aws iam list-users
+```
