@@ -114,6 +114,9 @@ aws --version
 # to configure add AWS Access Key Id and Secret Access Key
 aws configure
 
+# aws config, credentials file path
+cd ~/.aws/
+
 # run command you want to check
 aws iam list-users
 ```
