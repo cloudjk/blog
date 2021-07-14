@@ -102,12 +102,12 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: cli installation and configuration
-      url: /aws_aws_cli_install.html
-      output: web, pdf
-
     - title: connecting to EC2 using SSH and pem key
       url: /aws_ssh_connect_ec2.html
+      output: web, pdf
+
+    - title: IAM
+      url: /aws_iam.html
       output: web, pdf
 
   - title: Linux
