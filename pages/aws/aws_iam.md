@@ -69,4 +69,33 @@ folder: aws
 - Main benefit of MFA: If a password is stolen or hacked, the account is not compromised
 - Virtual MFA device: Support for multiple tokens on a single device
   - Google Authenticator (phone only)
-  - Authy (multi-device)
+  - Twillio Authy (multi-device)
+
+### How can users access AWS?
+
+- To access AWS, you have three options:
+  - AWS Management Console (protected by password + MFA)
+  - AWS Command Line Interface (CLI): protected by access keys
+  - AWS Sofware Development Kit (SDK) - for code: protected by access keys
+- Access keys are generated through the AWS Console
+- Users manage their own access keys
+- **Access Keys are secret, just like a password. Don't share them**
+- Access Key ID = username
+- Secret Access Key = password
+
+### What's the AWS CLI?
+
+- A tool that enables you to interact with AWS services using commands in your command-line shell
+- Direct Access to the public APIs of AWS services
+- You can develop scripts to manage your resources
+- It's open source https://github.com/aws/aws-cli
+- Alternative to using AWS Management Console
+
+{% include image.html file="aws-cli.png" %}
+
+### What's the AWS SDK?
+
+- AWS Software Development Kit(AWS SDK)
+- Language-specific APIs (set of libraries)
+- Enables you to access and manage AWS services programmatically
+- Embedded within your application
