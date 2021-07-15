@@ -83,3 +83,14 @@ folder: aws
 - Access Key ID = username
 - Secret Access Key = password
 - **Do not use root user to create security credentials**
+
+### IAM Roles for Services
+
+- Some AWS service will need to perform actions on your behalf
+- To do so, we will assign permissions to AWS services with IAM Roles
+- Common roles:
+  - EC2 Instance Roles
+  - Lambda Function Roles
+  - Roles for CloudFormation
+
+{% include image.html file="iam_roles.png" %}
