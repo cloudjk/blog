@@ -106,8 +106,12 @@ entries:
       url: /aws_ssh_connect_ec2.html
       output: web, pdf
 
-    - title: IAM
+    - title: AWS IAM
       url: /aws_iam.html
+      output: web, pdf
+
+    - title: AWS CLI
+      url: /aws_cli.html
       output: web, pdf
 
   - title: Linux
