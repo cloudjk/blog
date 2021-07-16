@@ -114,6 +114,10 @@ entries:
       url: /aws_cli.html
       output: web, pdf
 
+    - title: AWS VPC
+      url: /aws_vpc.html
+      output: web, pdf
+
   - title: Linux
     output: web, pdf
     folderitems:
