@@ -1,5 +1,5 @@
 ---
-title: AWS VPC
+title: AWS VPC, Subnet, IGW, RouteTable, etc
 sidebar: mydoc_sidebar
 permalink: aws_vpc.html
 folder: aws
@@ -73,3 +73,30 @@ folder: aws
   - 172.16.0.0 - 172.31.255.255 (172.16.0.0/12)
   - 192.168.0.0 - 192.168.255.255 (192.168.0.0/16)
 - **Your VPC CIDR should not overlap with your other networks**
+
+### Subnet
+
+- Subnet is a logical subdivision of an IP network
+- Usually a public subnet is much smaller than a private subnet because in a public subnet you would put your load balancers only, where as in the private subnet you would put all your applications et cetera.
+- AWS reserves 5 IPs address (first 4 and last 1 IP address) in each Subnet
+- These 5 IPs are not available for use and cannot be assigned to an instance
+- Ex, if CIDR block 10.0.0.0/24, reserved IP are:
+  - 10.0.0.0: Network address
+  - 10.0.0.1: Reserved by AWS for the VPC router
+  - 10.0.0.2: Reserved by AWS for mapping to Amazon-provided DNS
+  - 10.0.0.3: Reserved by AWS for future use
+  - 10.0.0.255: Network broadcast address. AWS does not support broadcast in a VPC, therefore the address is reserved
+
+### Internet Gateways
+
+- Internet gateways help our VPC instances connect with the internet
+- It scales horizontally and is HA and redundant
+- Must be created separately from VPC
+- One VPC can only be attached to one IGW and vice versa
+- Internet Gateway is also a NAT for the instances that have a public IPv4
+- Internet Gateways on their own do not allow internet access
+- Route tables must also be edited
+
+{% include image.html file="aws_vpc.png" %}
+{% include image.html file="public_rt.png" %}
+{% include image.html file="private_rt.png" %}
