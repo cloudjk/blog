@@ -100,3 +100,27 @@ folder: aws
 {% include image.html file="aws_vpc.png" %}
 {% include image.html file="public_rt.png" %}
 {% include image.html file="private_rt.png" %}
+
+### NAT Instances - Network Address Translation (Outdated but still at the exam)
+
+- Allow instances in the private subnets to connect to the internet
+- Must be launched in a public subnet
+- Must disable EC2 flag: Source/Destination Check
+- Must have Elastic IP attached to it
+- Route table must be configured to route traffic from private subnets to NAT instance
+
+{% include image.html file="nat_instance.png" %}
+
+### NAT Instances - Comments
+
+- Amazon Linux AMI pre-configured are available
+- Not highly available / resilient setup out of the box
+- Would need to create ASG in multi AZ + resilient user-data script
+- Internet traffic bandwidth depends on EC2 instance Performance
+- Must manage security groups & rules
+  - Inbound:
+    - Allow HTTP / HTTPS traffic coming from private subnets
+    - Allow SSH from your home network (access is provided through Internet Gateway)
+  - OUtbound:
+    - Allow HTTP/HTTPS traffic to the internet
+

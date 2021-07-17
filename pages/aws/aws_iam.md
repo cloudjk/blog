@@ -15,7 +15,7 @@ folder: aws
 
 ### IAM: Permissions
 
-- Users or Groups can be assinged JSON documents called policies.
+- Users or Groups can be assigned JSON documents called policies.
 
 {% include image.html file="policies.png" %}
 
@@ -41,7 +41,7 @@ folder: aws
 
 - Statements consists of
   - Sid: identifier for the statement (optional)
-  - Effect: wheter the statement allows or denies access (Allow, Deny)
+  - Effect: whether the statement allows or denies access (Allow, Deny)
   - Principal: account/user/role to which this policy applied to
   - Action: list of actions this policy allows or denies
   - Resource: list of resources to which the actions applied to
@@ -76,7 +76,7 @@ folder: aws
 - To access AWS, you have three options:
   - AWS Management Console (protected by password + MFA)
   - AWS Command Line Interface (CLI): protected by access keys
-  - AWS Sofware Development Kit (SDK) - for code: protected by access keys
+  - AWS Software Development Kit (SDK) - for code: protected by access keys
 - Access keys are generated through the AWS Console
 - Users manage their own access keys
 - **Access Keys are secret, just like a password. Don't share them**
@@ -102,9 +102,9 @@ folder: aws
 
 - IAM Access Advisor (user-level)
   - Access advisor shows the service permissions granted to a user and when those services were last accessed
-  - You can use this information to revise your policies. Reduce permissions users can get in line with that principle of **least privilies**
+  - You can use this information to revise your policies. Reduce permissions users can get in line with that principle of **least privileges**
 
-### IAM Guidlines & Best Practices
+### IAM Guidelines & Best Practices
 
 - Don't use the root account except for AWS account setup
 - One physical user = One AWS user
