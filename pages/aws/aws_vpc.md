@@ -55,7 +55,7 @@ folder: aws
   - 192.168.0.0 - 192.168.255.255 (192.168.0.0/16) <= example: home networks
 - All the rest of the IP on the internet are public IP
 
-### Default VPC Walkthrough
+### Default VPC Walk-through
 
 - All new accounts have a default VPC
 - New instances are launched into default VPC if no subnet is specified
