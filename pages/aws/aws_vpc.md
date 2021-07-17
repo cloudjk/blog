@@ -124,3 +124,26 @@ folder: aws
   - OUtbound:
     - Allow HTTP/HTTPS traffic to the internet
 
+### NAT Gateway
+
+- AWS managed NAT, higher bandwidth, better availability, no admin
+- Pay by the hour for usage and bandwidth
+- NAT is created in specific AZ, uses an EIP
+- Cannot be used by an instance in that subnet (only from other subnets)
+- Requires an IGW (Private Subnet => NAT GW => IGW)
+- 5 Gbps bandwidth with automatic scaling up to 45 Gbps
+- No security group to manage / required
+
+{% include image.html file="nat_gw.png" %}
+
+### NAT Gateway with High Availability
+
+- NAT Gateway is resilient within a single-AZ
+- Must create multiple NAT Gateway in multiple AZ for fault-tolerance
+- There is no cross AZ failover needed because if an AZ goes down it doesn't need NAT
+
+{% include image.html file="nat_gw_failover.png" %}
+
+### Compare NAT gateways and NAT instances
+
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html
