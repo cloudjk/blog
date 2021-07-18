@@ -45,3 +45,14 @@ folder: aws
 - TTL is basically a way for web browsers and client to cache the response of a DNS query not to overload DNS
 - {% include image.html file="ttl.png" %}
 
+### CNAME vs Alias
+
+- AWS Resources (Load Balancers, CloudFront...) expose an AWS hostname: **lbl-1234.us-east-2.elb.amazonaws.com** and you want **myapp.mydomain.com**
+- CNAME:
+  - Points a hostname to any other hostname (app.mydomain.com => blabla.anything.com)
+  - **Only for Non Root Domain (e.g.) something.mydomain.com**
+- Alias:
+  - Points a hostname to an AWS Resource (app.mydomain.com => blabla.amazonaws.com)
+  - **Works for Root Domain and Non Root Domain (e.g.) mydomain.com * something.mydomain.com**
+  - Free of charge
+  - Native health check
