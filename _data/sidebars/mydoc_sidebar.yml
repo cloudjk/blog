@@ -118,6 +118,10 @@ entries:
       url: /aws_vpc.html
       output: web, pdf
 
+    - title: AWS Route53
+      url: /aws_route53.html
+      output: web, pdf
+
   - title: Linux
     output: web, pdf
     folderitems:
