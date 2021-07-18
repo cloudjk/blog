@@ -58,16 +58,32 @@ folder: aws
   - Native health check
 
 ### Routing Policy
-#### Simple Routing Policy
-  - Use when you need to redirect to a single resource
-  - You can't attach health checks to a simple routing policy
-  - **If multiple values are returned, a random one is chosen by the client**
-  - {% include image.html file="simple_routing.png" %}
+  #### Simple Routing Policy
+    - Use when you need to redirect to a single resource
+    - You can't attach health checks to a simple routing policy
+    - **If multiple values are returned, a random one is chosen by the client**
+    - {% include image.html file="simple_routing.png" %}
 
-#### Weighted Routing Policy
-  - Control the % of the requests that go to specific endpoint
-  - Helpful to test 1 % of traffic on new app version for example
-  - Helpful to split traffic between two regions
-  - Can be associated with Health Checks
-  - {% include image.html file="weighted_routing.png" %}
+  #### Weighted Routing Policy
+    - Control the % of the requests that go to specific endpoint
+    - Helpful to test 1 % of traffic on new app version for example
+    - Helpful to split traffic between two regions
+    - Can be associated with Health Checks
+    - {% include image.html file="weighted_routing.png" %}
 
+  #### Latency Routing Policy
+    - Redirect to the server that has the least latency close to us
+    - Super helpful when latency of users is a priority
+    - Latency is evaluated in terms of user to designated AWS Region
+    - Germany may be directed to the US (if that's the lowest latency)
+    - {% include image.html file="latency_routing.png" %}
+
+### Health Checks
+
+-  Have X health checks failed => unhealthy (default 3)
+-  After X health checks passed => healthy (default 3)
+-  Default Health Check Interval: 30s (can set to 10s - higher cost)
+-  ** About 15 health checkers will check the endpoint health** (i.e.) one request every 2 seconds on average
+-  Can have HTTP, TPC and HTTPS health checks (no SSL verification)
+-  Possibility of integrating the health check with CloudWatch
+-  **Health checks can be linked to Route53 DNS queries!**
