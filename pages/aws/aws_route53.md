@@ -63,3 +63,11 @@ folder: aws
   - You can't attach health checks to a simple routing policy
   - **If multiple values are returned, a random one is chosen by the client**
   - {% include image.html file="simple_routing.png" %}
+
+#### Weighted Routing Policy
+  - Control the % of the requests that go to specific endpoint
+  - Helpful to test 1 % of traffic on new app version for example
+  - Helpful to split traffic between two regions
+  - Can be associated with Health Checks
+  - {% include image.html file="weighted_routing.png" %}
+
