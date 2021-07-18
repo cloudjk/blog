@@ -78,6 +78,16 @@ folder: aws
   - Germany may be directed to the US (if that's the lowest latency)
   - {% include image.html file="latency_routing.png" %}
 
+#### Failover Routing Policy
+  - {% include image.html file="failover_policy.png" %}
+
+#### Geo Location Routing Policy
+  - Different from Latency based!
+  - This is routing based on user location
+  - Here we specify: traffic from the UK should go to this specific IP
+  - Should create a **default policy** (in case there's n omatch on location)
+  - {% include image.html file="geo_routing.png" %}
+
 ### Health Checks
 
 -  Have X health checks failed => unhealthy (default 3)
