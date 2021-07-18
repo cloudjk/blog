@@ -100,6 +100,18 @@ folder: aws
     - Non-AWS resources (specify Latitude and Longitude)
   - You must use Route53 Traffic Flow (advanced) to use this feature
 
+#### Multi Value Routing Policy
+
+  - Use when routing traffic to multiple resources
+  - Want to associate a Route 53 health checks with records
+  - Up to 8 healthy records are returned for each Multi Value query
+  - Multi Value is not a substitue for having an ELB (ELB is for same region, multi value is for different region)
+  - | Name             | Type     | Value        | TTL | Set ID | Health Check |
+  - | ---------------  | -------- | ------------ | --- | ------ | ------------ |
+  - | www.example.com  | A Record | 192.0.2.2    | 60  | Web1   | A            |  
+  - | www.example.com  | A Record | 198.51.100.2 | 60  | Web2   | B            |
+  - | www.example.com  | A Record | 203.0.113.2  | 60  | Web3   | C            |
+
 ### Health Checks
 
 -  Have X health checks failed => unhealthy (default 3)
