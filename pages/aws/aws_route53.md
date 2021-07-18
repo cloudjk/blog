@@ -31,3 +31,11 @@ folder: aws
 
 - You pay $0.50 per month per host zone
 
+- To find the IPv4 info use **dig** or *nslookup* in mac (no http://!!)
+
+```bash
+dig www.google.com
+# or
+nslookup www.google.com
+```
+
