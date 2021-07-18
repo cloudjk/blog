@@ -122,3 +122,20 @@ folder: aws
 -  Can have HTTP, TPC and HTTPS health checks (no SSL verification)
 -  Possibility of integrating the health check with CloudWatch
 -  **Health checks can be linked to Route53 DNS queries!**
+
+### 3rd Party Domains and Route53
+#### Route53 as a Registrar
+- A domain name registrar is an organization that manages the reservation of Internet domain names
+- Famous names:
+  - GoDaddy
+  - Google Domains
+  - Etc...
+- And also... Route53 (e.g.AWS)!
+- Domain Registrar !== DNS
+
+#### 3rd Party Registrar with AWS Route53
+  - If you buy your domain on 3rd party website, you can still use Route53
+    - 1) Create a Hosted Zone using 3rd party domain in Route53
+    - 2) Update NS Records on 3rd party website to use Route53 name servers
+  - Domain Registrar !== DNS
+  - But each domain registrar usually comes with some DNS features
