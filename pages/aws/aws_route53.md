@@ -33,9 +33,9 @@ folder: aws
 
 - To find the IPv4 info use **dig** or *nslookup* in mac (no http://!!)
 
-```bash
-dig www.google.com
-# or
-nslookup www.google.com
-```
+  ```bash
+  dig www.google.com
+  # or
+  nslookup www.google.com
+  ```
 
