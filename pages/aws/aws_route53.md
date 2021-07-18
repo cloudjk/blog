@@ -56,3 +56,10 @@ folder: aws
   - **Works for Root Domain and Non Root Domain (e.g.) mydomain.com * something.mydomain.com**
   - Free of charge
   - Native health check
+
+### Routing Policy
+#### Simple Routing Policy
+  - Use when you need to redirect to a single resource
+  - You can't attach health checks to a simple routing policy
+  - **If multiple values are returned, a random one is chosen by the client**
+  - {% include image.html file="simple_routing.png" %}
