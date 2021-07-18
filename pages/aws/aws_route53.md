@@ -34,8 +34,14 @@ folder: aws
 - To find the IPv4 info use **dig** or *nslookup* in mac (no http://!!)
 
   ```bash
+  # show detailed info (including TTL)
   dig www.google.com
-  # or
+  # show just ip
   nslookup www.google.com
   ```
+
+### DNS Records TTL (Time To Live)
+
+- TTL is basically a way for web browsers and client to cache the response of a DNS query not to overload DNS
+- {% include image.html file="ttl.png" %}
 
