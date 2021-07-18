@@ -15,8 +15,8 @@ folder: aws
   - CNAME: hostname to hostname
   - Alias: hostname to AWS resource
 
-#### Diagram for A Record
-- {% include image.html file="diagram_a_record.png" %}
+- Diagram for A Record
+  - {% include image.html file="diagram_a_record.png" %}
 
 - Route53 can use:
   - public domain names you own (or buy)
