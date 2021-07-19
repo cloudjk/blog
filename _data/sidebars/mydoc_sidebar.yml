@@ -122,6 +122,10 @@ entries:
       url: /aws_route53.html
       output: web, pdf
 
+    - title: AWS ELB & ASG
+      url: /aws_elb_asg.html
+      output: web, pdf
+
   - title: Linux
     output: web, pdf
     folderitems:
