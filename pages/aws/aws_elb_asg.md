@@ -115,3 +115,11 @@ folder: aws
   - Monitoring
     - ELB access logs will log all access requests (so you can debug per request)
     - CloudWatch Metrics will give you aggregate statistics (ex: connections count)
+
+
+### Classic Load Balancers (v1)
+
+  - Supports TCP(Layer 4), HTTP & HTTPS (Layer 7)
+  - Health checks are TCP or HTTP based
+  - Fixed hostname XXX.region.elb.amazonaws.com
+  - {% include image.html file="clb.png" %}
