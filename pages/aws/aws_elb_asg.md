@@ -5,7 +5,8 @@ permalink: aws_elb_asg.html
 folder: aws
 ---
 
-### Scalability & Availability
+### High Availability & Scalability
+#### Scalability & Availability
 
 - Scalability means that application / system can handle greater loads by adapting
 - There are two kinds of scalability:
@@ -14,7 +15,7 @@ folder: aws
 - Scalability is linked but different to High Availability
 - Let's deep dive into the distinction, using a call center as an example
 
-### Vertical Scalability
+#### Vertical Scalability
 
 - Vertical Scalability means increasing the size of the instance
 - For example, your application runs on a t2.micro
@@ -24,7 +25,7 @@ folder: aws
 - There's usually a limit to how much you can vertically scale (hardware limit)
 - {% include image.html file="vertical_scalability.png" %}
 
-### Horizontal Scalability
+#### Horizontal Scalability
 
 - Horizontal Scalability means increasing the number of instances / systems for your application
 - Horizontal scaling implies **distributed systems**
@@ -32,7 +33,7 @@ folder: aws
 - It's easy to horizontally scale thanks to the cloud offerings such as Amazon EC2
 - {% include image.html file="horizontal_scalability.png" %}
 
-### High Availability
+#### High Availability
 
 - High Availability usually goes hand in hand with horizontal scaling
 - High Availability means running your application / system in at least 2 data centers (== Availability Zone)
@@ -41,7 +42,7 @@ folder: aws
 -  The high availability can be active (for horizontal scaling)
 - {% include image.html file="ha.png" %}
 
-### High Availability & Scalability for EC2
+#### High Availability & Scalability for EC2
 
 - Vertical Scaling: Increase instance size (= scale up/down)
   - From: t2.nano - 0.5G of RM, I vCPU
