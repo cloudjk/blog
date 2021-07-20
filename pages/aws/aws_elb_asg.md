@@ -117,7 +117,7 @@ folder: aws
     - CloudWatch Metrics will give you aggregate statistics (ex: connections count)
 
 
-### Classic Load Balancers (v1)
+### Classic Load Balancer (v1)
 
   - Supports TCP(Layer 4), HTTP & HTTPS (Layer 7)
   - Health checks are TCP or HTTP based
@@ -134,3 +134,36 @@ folder: aws
     systemctl enable httpd.service
     echo "Hello World from $(hostname -f)" > /var/www/html/index.html
     ```
+
+### Application Load Balancer (v2)
+
+  - Application load balancers is Layer 7 (HTTP)
+  - Load balancing to multiple HTTP applications across machines (target groups)
+  - Load balancing to multiple applications on the same machine (ex: containers)
+  - Support for HTTP/2 and WebSocket
+  - Support redirects (from HTTP to HTTPS for example)
+  - Routing tables to different target groups:
+    - Routing based on path in URL (example.com/users & example.com/posts)
+    - Routing based on hostname in URL (one.example.com & ohter.example.com)
+    - Routing based on Query String, Headers (example.com/users?id=123&order=false)
+  - ALB are a great fit for micro services & container-based application
+    - e.g. Docker & Amazon ECS
+  - Has a port mapping feature to redirect to a dynamic port in ECS
+  - In comparison, we'd need multiple Classic Load Balancer per application
+  #### HTTP Based Traffic
+    - {% include image.html file="alb_http_based_traffic.png" %}
+  #### Target Groups
+    - EC2 instances (can be managed by an Auto Scaling Group) - HTTP
+    - ECS tasks (managed by ECS itself) - HTTP
+    - Lambda functions - HTTP request is translated into a JSON event
+    - IP Addresses - **must be private IPs**
+    - ALB can route to multiple target groups
+    - **Health checks are at the target group level**
+  #### Query Strings/Parameters Routing
+    - {% include image.html file="querystring_routing.png" %}
+  #### Good to Know
+    - Fixed hostname (XXX.region.elb.amazonaws.com)
+    - The application servers don't see the IP of the client directly
+      - The true IP of the client is inserted in the header X-Forwarded-For
+      - We can also get Port (X-Forwarded-Port) and proto (X-Forwarded-Proto)
+      - - {% include image.html file="alb_goodtoknow.png" %}
