@@ -166,4 +166,16 @@ folder: aws
     - The application servers don't see the IP of the client directly
       - The true IP of the client is inserted in the header X-Forwarded-For
       - We can also get Port (X-Forwarded-Port) and proto (X-Forwarded-Proto)
-      - - {% include image.html file="alb_goodtoknow.png" %}
+      - {% include image.html file="alb_goodtoknow.png" %}
+
+### Network Load Balancer (v2)
+  - Network load balancers (Layer 4) allow to:
+    - Forward TCP & UDP traffic to your instances
+    - Handle millions of request per seconds
+    - Less latency ~ 100 ms (vs 400 ms for ALB)
+  - NLB has one static IP per AZ, and supports assigning Elastic IP
+    (helpful for whitelisting specific IP)
+  - NLB are used for extreme performance, TCP or UDP traffic
+  - Not included in the AWS free tier
+  - TCP (Layer 4) Based Traffic
+  - {% include image.html file="tcp_based_traffic.png" %}
