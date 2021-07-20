@@ -160,7 +160,6 @@ folder: aws
       - ALB can route to multiple target groups
       - **Health checks are at the target group level**
     #### Query Strings/Parameters Routing
-      - Query Strings / Parameters Routing
       - {% include image.html file="querystring_routing.png" %}
     #### Good to Know
       - Fixed hostname (XXX.region.elb.amazonaws.com)
