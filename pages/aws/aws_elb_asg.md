@@ -257,3 +257,13 @@ folder: aws
   - Network Load Balancer (v2)
     - Supports **multiple listeners** with **multiple SSL certificates**
     - **Uses Server Name Indication (SNI)** to make it work
+
+### ELB - Connection Draining
+  - Feature naming:
+    - CLB: Connection Draining
+    - Target Group: **Deregistration Delay** (for ALB & NLB)
+    - With Connection Draining feature enabled, if an EC2 backend instance fails health checks the Elastic Load Balancer will not send any new requests to the unhealthy instance. However, it will still allow existing (in-flight) requests to complete for the duration of the configured timeout.
+    - Between 1 to 3600 seconds, default is 300 seconds
+    - Can be disabled (set value to 0)
+    - Set to a low value if your request are short
+    - {% include image.html file="connection_draining.png" %}
