@@ -205,10 +205,6 @@ entries:
       url: /itaewon_class_ep1.html
       output: web, pdf
 
-    - title: Itaewon class ep1 02
-      url: /itaewon_class_ep2.html
-      output: web, pdf
-
   - title: ETC
     output: web
     folderitems:
