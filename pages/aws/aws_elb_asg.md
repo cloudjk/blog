@@ -206,3 +206,12 @@ folder: aws
 ### Cross-Zone Load Balancing
 
   - {% include image.html file="cross_zone_lb.png" %}
+  - Application Load Balancer
+    - Always on (can't be disabled)
+    - No charges for inter AZ data
+  - Network Load Balancer
+    - Disabled by default
+    - You pay charges ($) for inter AZ data if enabled
+  - Classic Load Balancer
+    - Through Console => Enabled by default
+    - Through CLI/API
