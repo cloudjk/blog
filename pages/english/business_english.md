@@ -1,7 +1,7 @@
 ---
 title: expression 50 part 1 03
 sidebar: mydoc_sidebar
-permalink: template.html
+permalink: business_english.html
 folder: english
 ---
 ### 전화 때문에 좀 늦었어.
