@@ -28,13 +28,8 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: npm morgan
-      url: /node_npm_morgan.html
-      output: web, pdf
-      type: homepage
-
-    - title: npm winston
-      url: /node_npm_winston.html
+    - title: npm libraries
+      url: /node_npm.html
       output: web, pdf
       type: homepage
 
@@ -43,20 +38,25 @@ entries:
       output: web, pdf
       type: homepage
 
-    - title: path
-      url: /node_path.html
-      output: web, pdf
-      type: homepage
+      subfolders:
+      - title: config
+        output: web, pdf
+        subfolderitems:
+      
+        - title: node_path
+          url: /node_process_cwd_dirname.html
+          output: web, pdf
+          type: homepage
 
-    - title: process.cwd() and dirname
-      url: /node_process_cwd_dirname.html
-      output: web, pdf
-      type: homepage
+        - title: process.cwd() and dirname
+          url: /node_process_cwd_dirname.html
+          output: web, pdf
+          type: homepage
 
-    - title: node_env
-      url: /node_process_env_node_env.html
-      output: web, pdf
-      type: homepage
+        - title: node_env
+          url: /node_process_env_node_env.html
+          output: web, pdf
+          type: homepage
 
   - title: Javascript
     output: web, pdf
