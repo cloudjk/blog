@@ -10,7 +10,7 @@ folder: javascript
   - Every method/class should handle a single responsibility
 
   - 
-    ```java
+    ```javascript
     -- The Challenge
     class Statistics {
       public computeSalesStatistics() {
