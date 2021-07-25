@@ -1,7 +1,7 @@
 ---
-title: expression 50 part 1 03
+title: business_anglo
 sidebar: mydoc_sidebar
-permalink: template.html
+permalink: business_anglo.html
 folder: english
 ---
 ### 시작할까요?
