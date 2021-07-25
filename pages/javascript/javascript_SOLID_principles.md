@@ -10,30 +10,30 @@ folder: javascript
   - Every method/class should handle a single responsibility
 
   - 
-  ```java
-  -- The Challenge
-  class Statistics {
-    public computeSalesStatistics() {
-      // ...
+    ```java
+    -- The Challenge
+    class Statistics {
+      public computeSalesStatistics() {
+        // ...
+      }
+      public generateReport() {
+        // ...
+      }
     }
-    public generateReport() {
-      // ...
-    }
-  }
 
-  -- Solution
-  class Statistics {
-    public computeSalesStatistics() {
-      // ...
+    -- Solution
+    class Statistics {
+      public computeSalesStatistics() {
+        // ...
+      }
     }
-  }
 
-  class ReportGenerator {
-    public generateReport() {
-      // ...
+    class ReportGenerator {
+      public generateReport() {
+        // ...
+      }
     }
-  }
-  ```
+    ```
 
 ### 2. Open/Close Principle
 
