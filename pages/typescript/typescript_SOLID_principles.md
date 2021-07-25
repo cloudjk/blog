@@ -1,8 +1,8 @@
 ---
 title: SOLID Principles
 sidebar: mydoc_sidebar
-permalink: javascript_solid_principle.html
-folder: javascript
+permalink: typescript_solid_principle.html
+folder: typescript
 ---
 
 ### 1. Single Responsibility Principle

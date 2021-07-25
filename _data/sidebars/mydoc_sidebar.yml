@@ -91,7 +91,7 @@ entries:
       output: web, pdf
 
     - title: SOLID principles
-      url: /javascript_solid_principle.html
+      url: /typescript_solid_principle.html
       output: web, pdf
       
 
