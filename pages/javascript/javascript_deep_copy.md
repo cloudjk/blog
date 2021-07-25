@@ -11,7 +11,7 @@ folder: javascript
 
 ### 1. Assgin array to new array. This does not copy an array
 
-```java
+```javascript
 const arr = [
     {a: 1, b: 2, c: 3},
     {x: 10, y: 11},
@@ -25,7 +25,7 @@ console.log(JSON.stringify(assingedArr))    // assigned array chanages when the 
 
 ### 2. The spread operator (...)
 
-```java
+```javascript
 const arr = [
     {a: 1, b: 2, c: 3},
     {x: 10, y: 11},
@@ -36,7 +36,7 @@ const shallowCopy = [...arr]
 
 ### 3. slice()
 
-```java
+```javascript
 const arr = [
     {a: 1, b: 2, c: 3},
     {x: 10, y: 11},
@@ -47,7 +47,7 @@ const shallowCopy = arr.slice()
 
 ### 4. Object.assign(target, source) : copies all enumerable properties from source objects to a target object. Returns target object.
 
-```java
+```javascript
 const arr = [
     {a: 1, b: 2, c: 3},
     {x: 10, y: 11},
@@ -59,7 +59,7 @@ Object.assign(shallowCopy, arr)
 
 ### 5. Array.from
 
-```java
+```javascript
 const arr = [
     {a: 1, b: 2, c: 3},
     {x: 10, y: 11},
@@ -71,7 +71,7 @@ const shallowCopy = Array.from(arr)
 
 ### 1. lodash _.cloneDeep()
 
-```java
+```javascript
 const originalArray = [
     37, 
     3700, 
@@ -84,7 +84,7 @@ const deepCopy = _.cloneDeep(originalArray)
 
 ### 2. custom funciton
 
-```java
+```javascript
 const originalArray = [37, 3700, { hello: "world" }]
 const deepCopyFunction = (inObj) => {
     let outObj, val, key
@@ -110,7 +110,7 @@ const deepCopy = deepCopyFunction(originalArray)
 **Do not use this when there is one of date, functions, undefined, Infinity, [NaN], RegExps, Maps, Sets, Blobs, FileLists, ImageDatas,
 sparse Arrays, Type Arrays or other complex types withing your object in the object you want to deep copy**
 
-```java
+```javascript
 const originalArray = [37, 3700, { hello: "world" }]
 const deepCopy = JSON.parse(JSON.stringify(originalArray));
 ```
@@ -119,7 +119,7 @@ const deepCopy = JSON.parse(JSON.stringify(originalArray));
 
 **400% faster than lodash cloneDeep**
 
-```java
+```javascript
 const clone = require('rfdc')() // Returns the deep copy function
 clone({a: 37, b: {c: 3700}})
 ```

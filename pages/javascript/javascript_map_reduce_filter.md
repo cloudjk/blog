@@ -8,7 +8,7 @@ folder: javascript
 
 Return an array containing only the id of each person
 
-```java
+```javascript
 // What you have
 const officers = [
   { id: 20, name: 'Captain Piett' },
@@ -20,7 +20,7 @@ const officers = [
 [20, 24, 56, 88]
 ```
 
-```java
+```javascript
 const officerIds = officers.map(officer => officer.id)
 ```
 
@@ -30,7 +30,7 @@ Only diffence is that reduce passes the result of this callbak (the accumulator)
 
 Return the total years of experience of all of them.
 
-```java
+```javascript
 const pilots = [
   {
     id: 10,
@@ -55,7 +55,7 @@ const pilots = [
 ]
 ```
 
-```java
+```javascript
 const pilotsYears = pilots.reduce((acc, pilot) => acc + pilot.years, 0)
 ```
 
@@ -65,7 +65,7 @@ filter is used when there is an array but only want some of the elements in it.
 
 Return two arrays: one for Rebels and the other one for Empire.
 
-```java
+```javascript
 const pilots = [
   {
     id: 2,
@@ -89,7 +89,7 @@ const pilots = [
   }
 ];
 ```
-```java
+```javascript
 const arrRebel = pilots.filter(pilot => pilot.faction === 'Rebels')
 const arrEmpire = pilots.filter(pilot => pilot.faction === 'Empire')
 ```
@@ -98,7 +98,7 @@ const arrEmpire = pilots.filter(pilot => pilot.faction === 'Empire')
 
 Get the total scores of force users
 
-```java
+```javascript
 const personnel = [
   {
     id: 5,
@@ -138,13 +138,13 @@ const personnel = [
 ]
 ```
 
-```java
+```javascript
   const forceUsersSum = personnel
     .filter(per => per.isForceUser)
     .reduce((acc, per) => acc + per.pilotingScore + per.shootingScore, 0)
 ```
 
-```java
+```javascript
   const forceUsersSum = personnel.reduce((acc, per) => {
     return per.isForceUser ? acc + per.pilotingScore + per.shootingScore : acc
   }, 0)
@@ -157,7 +157,7 @@ When its value is true then it returns true right away without further checking.
 
 Check if there are any pilots among operatives.
 
-```java
+```javascript
 const operatives = [
   { id: 12, name: 'Baze Malbus', pilot: false },
   { id: 44, name: 'Bodhi Rook', pilot: true },
@@ -166,7 +166,7 @@ const operatives = [
 ];
 ```
 
-```java
+```javascript
 const listHasPilots = operatives.some(operative => operative.pilot)
 ```
 
@@ -176,7 +176,7 @@ Check if every value of the array matches a condition.
 
 Check if all pilots are ture among operatives
 
-```java
+```javascript
 const listHasPilotsOnly = operatives.every(operative => operative.pilot)
 ```
 
@@ -184,7 +184,7 @@ const listHasPilotsOnly = operatives.every(operative => operative.pilot)
 
 Find the element and return the first value matching the condition
 
-```java
+```javascript
 const operatives = [
   { id: 12, name: 'Baze Malbus', pilot: false },
   { id: 44, name: 'Bodhi Rook', pilot: true },
@@ -193,6 +193,6 @@ const operatives = [
 ];
 ```
 
-```java
+```javascript
 const firstPilot = operatives.find(operative => operative.pilot)
 ```

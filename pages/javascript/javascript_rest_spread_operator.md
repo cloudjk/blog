@@ -9,7 +9,7 @@ folder: javascript
 - takes variable number of parameters or arguments and put them into an single array
 - Specified in the function declaration
 
-```java
+```javascript
   const displayColors = (message, ...colors) => {
     console.log(message);
     for (let i in colors) {
@@ -27,7 +27,7 @@ folder: javascript
 - takes an array and splits it into the individual elements
 - Specified during funciton call
 
-```java
+```javascript
   const displayColors = (message, ...colors) => {
     console.log(message);
     for (let i in colors) {

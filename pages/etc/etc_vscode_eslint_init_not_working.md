@@ -6,6 +6,6 @@ folder: etc
 ---
 ### When eslint --init is not working in VS Code
 
-```java
+```javascript
 run ./node_modules/.bin/eslint --init
 ```

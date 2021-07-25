@@ -12,14 +12,14 @@ folder: node
 
 ### How to check what mode the current system is in
 
-```java
+```javascript
 // insert below at the first line app.js(index.js)
 process.env.NODE_ENV = (process.env.NODE_ENV && (process.env.NODE_ENV).trim().toLowerCase() == 'production') ? 'production' : 'development';
 ```
 
 ### How to diverge to different mode variables
 
-```java
+```javascript
 // can put in below anywhere
 if (process.env.NODE_ENV == 'production') {
     console.log('Production Mode');

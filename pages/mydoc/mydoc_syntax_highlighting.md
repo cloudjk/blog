@@ -13,7 +13,7 @@ folder: mydoc
 For syntax highlighting, use fenced code blocks optionally followed by the language syntax you want:
 
 <pre>
-```java
+```javascript
 import java.util.Scanner;
 
 public class ScannerAndKeyboard
@@ -31,7 +31,7 @@ public class ScannerAndKeyboard
 
 This looks as follows:
 
-```java
+```javascript
 import java.util.Scanner;
 
 public class ScannerAndKeyboard

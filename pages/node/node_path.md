@@ -9,12 +9,12 @@ folder: node
 
 1. path.join (Absolute path)
 
-```java
+```javascript
 path.join('/user', '/ryan', 'programs');    // returns "/user/ryan/programs"
 ```
 
 2. path.resolve (Relative path)
 
-```java
+```javascript
 path.resolve('/user', '/ryan', 'programs');    // returns "/ryan/programs"
 ```

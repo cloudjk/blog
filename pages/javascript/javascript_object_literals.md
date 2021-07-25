@@ -10,7 +10,7 @@ folder: javascript
 #### 2. returned object can be assigned to a variable
 #### 3. function property's colon and function can be removed
 
-```java
+```javascript
 const getName = (fname, sname) => {
   const objName = {
     fname,
@@ -29,7 +29,7 @@ console.log(name.fullname());
 ```
 
 #### 4. object key can be substituted by variable
-```java
+```javascript
 const key = "last name";
 const obj = {
   "firstName" :'Chandler',
