@@ -86,6 +86,10 @@ entries:
       url: /javascript_this_and_bind.html
       output: web, pdf
 
+    - title: interface and abstract class
+      url: /javascript_interface_abstract_class.html
+      output: web, pdf
+
   - title: Typescript
     output: web, pdf
     folderitems:
