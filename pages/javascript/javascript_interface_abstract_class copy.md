@@ -19,7 +19,7 @@ folder: javascript
 
     - An abstract class exists at runtime even if it has only abstract methods. (then **instanceof can be used**)
 
-    - An abstract class with abstract methods cannot be instantiated
+    - An abstract class with abstract methods cannot be instantiated directly
 
     - Strongly couple classes together
 

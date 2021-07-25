@@ -90,6 +90,11 @@ entries:
       url: /javascript_interface_abstract_class.html
       output: web, pdf
 
+    - title: SOLID principles
+      url: /javascript_solid_principle.html
+      output: web, pdf
+      
+
   - title: Typescript
     output: web, pdf
     folderitems:
