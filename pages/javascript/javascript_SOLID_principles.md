@@ -40,7 +40,7 @@ folder: javascript
   - Open to extension, Closed for modification. The idea is that a class, once implemented, should be closed any further modification, If any functionality is needed, it can be added later using extension features such as inheritance. This is primarily done so as to not break existing code as well as unit tests. It also results in a modular code.
 
   - 
-    ```java
+    ```javascript
     -- The Challenge
     class Rectangle {
       public width: number;
@@ -117,7 +117,7 @@ folder: javascript
 
   - Each derived class must replace its parent without affecting parent's behavior (Should not break code which means that return type should be equal)
   - 
-    ```java
+    ```javascript
     -- The Challenge
     class Rectangle {
       constructor(private _width: number, private _height: number) {}
@@ -152,7 +152,7 @@ folder: javascript
 
   - Instead of a generalized interface for a class, it is better to user separate segregated interfaces with smaller functionalities.
   - 
-    ```java
+    ```javascript
     -- The Challenge
     interface Bird {
       fly(): void;
@@ -209,7 +209,7 @@ folder: javascript
   - This principle states that a class should not depend on another class, but instead on an abstraction of that class. It allows loose-coupling and more reusability.
 
   - 
-    ```java
+    ```javascript
     -- The Challenge
     class MemoryStorage {
       private storage: any[];
