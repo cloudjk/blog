@@ -176,3 +176,18 @@ folder: english
 ### 세분화 하다
 
     break it down to 
+
+
+### 우린 회의에서 그 문제에 대해 자세히 얘기했고 그런대로 괜찮은 해결책을 찾아냈어.
+
+    We talked the problem through during the meeting and figured out an acceptable solution
+
+### 보스로부터 생산성을 증가시키라는 말을 들은 뒤 온갖 귀찮고 번거로운 일을 겪기 시작했다.
+
+    I started to get all this hassle from my boss about increasing productivity
+
+### 온라인으로 사면 많은 귀찮은 일을 안겪어도 돼
+
+    It saves a lot of hassle if you buy them online
+
+### 내가 본걸 근거로..
