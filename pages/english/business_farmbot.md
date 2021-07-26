@@ -1,7 +1,7 @@
 ---
 title: Business English
 sidebar: mydoc_sidebar
-permalink: business_english.html
+permalink: business_farmbot.html
 folder: english
 ---
 

@@ -215,7 +215,7 @@ entries:
       output: web, pdf
 
     - title: Business English - Farmbot
-      url: /business_english.html
+      url: /business_farmbot.html
       output: web, pdf
 
     - title: Business English - Anglo
