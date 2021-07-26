@@ -135,6 +135,10 @@ entries:
       url: /aws_elb_asg.html
       output: web, pdf
 
+    - title: AWS CloudFront
+      url: /aws_cloudfront.html
+      output: web, pdf
+
   - title: Linux
     output: web, pdf
     folderitems:
