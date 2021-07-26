@@ -41,6 +41,17 @@ folder: aws
   - The country is determined using a 3rd party Geo-IP database
   - Use case: Copyright Laws to control access to content
 
+#### CloudFront and HTTPS
+  - Viewer Protocol Policy:
+    - Redirect HTTP to HTTPS
+    - Or use HTTPS only
+  - Origin Protocol Policy (HTTP or S3)
+    - HTTPS only
+    - Or **Match Viewer**
+      (HTTP => HTTP & HTTPS => HTTPS)
+  - Note : S3 bucket "websites" don't support HTTPS
+  - {% include image.html file="protocol_policy.png" %}
+
 #### CloudFront vs S3 Cross Region Replication
   - CloudFront:
     - Global Edge network
