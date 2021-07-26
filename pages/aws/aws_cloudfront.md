@@ -13,35 +13,35 @@ folder: aws
 - Can expose external HTTPS and can talk to internal HTTPS backends
 - {% include image.html file="cloudfront.png" %}
 
-### CloudFront - Origins
+#### CloudFront - Origins
 - S3 bucket
   - For distributing files and caching them at the edge
   - Enhanced security with CloudFront Origin Access Identity (OAI)
   - CloudFront can be used as an ingress (to upload files to S3)
 
-### Custom Origin (HTTP)
+#### Custom Origin (HTTP)
   - Application Load Balancer
   - EC2 instance
   - S3 website (must first enable the bucket as a static s3 website)
   - Any HTTP backend you want
 
-### CloudFront at a high level
+#### CloudFront at a high level
   - {% include image.html file="cloudfront_highlevel.png" %}
 
-### CloudFront - S3 as an Origin
+#### CloudFront - S3 as an Origin
   - {% include image.html file="cloudfront_s3_origin.png" %}
 
-### CloudFront - ALB OR EC2 as an origin
+#### CloudFront - ALB OR EC2 as an origin
   - {% include image.html file="cloudfront_alb_ec2.png" %}
 
-### CloudFront Geo Restriction
+#### CloudFront Geo Restriction
   - You can restrict who can access your distribution
     - Whitelist: Allow your users to access your content only if they're in one of the countries on a list of approved countries
     - Blacklist: Prevent your users from accessing your content if they're in one of the countries on a blacklist of banned countries
   - The country is determined using a 3rd party Geo-IP database
   - Use case: Copyright Laws to control access to content
 
-### CloudFront vs S3 Cross Region Replication
+#### CloudFront vs S3 Cross Region Replication
   - CloudFront:
     - Global Edge network
     - Files are cached for a TTL
@@ -53,3 +53,16 @@ folder: aws
     - Read only
     - Great for dynamic content that needs to be available at low-latency in few regions
 
+### CloudFront Caching & Caching Invalidations
+  - Cache based on
+    - Headers
+    - Session Cookies
+    - Query String Parameters
+  - The cache lives at each CloudFront Edge Location
+  - You want to maximize the cache hit rate to minimize requests on the origin
+  - Control the TTL (0 seconds to 1 year), can be set by the origin using the Cache-Control header, Expires header...
+  - You can invalidate part of the cache using the CreateInvalidation API
+  - {% include image.html file="caching.png" %}
+
+### CloudFront - Maximize cache hits by separating static and dynamic distributions
+  - {% include image.html file="maximize_cache.png" %}
