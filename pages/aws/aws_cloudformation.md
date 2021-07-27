@@ -96,21 +96,51 @@ folder: aws
                 to the instance
     Type: 'AWS::EC2::KeyPair::KeyName'
   Resources:
-  Ec2Instance:
-    Type: 'AWS::EC2::Instance'
-    Properties:
-      SecurityGroups:
-        - !Ref InstanceSecurityGroup
-        - MyExistingSecurityGroup
-      KeyName: !Ref KeyName
-      ImageId: ami-7a11e213
-  InstanceSecurityGroup:
-    Type: 'AWS::EC2::SecurityGroup'
-    Properties:
-      GroupDescription: Enable SSH access via port 22
-      SecurityGroupIngress:
-        - IpProtocol: tcp
-          FromPort: '22'
-          ToPort: '22'
-          CidrIp: 0.0.0.0/0
+    MyInstance:
+      Type: 'AWS::EC2::Instance'
+      Properties:
+        AvailabilityZone: us-east-1a
+        ImageId: ami-ac47edb2
+        SecurityGroups:
+          - !Ref SSHSecurityGroup
+          - !Ref ServerSecurityGroup
+    # an elastic IP for our instance
+    MyEIP:
+      Type: AWS::EC2::MyEIP
+      Properties:
+        InstanceId: !Ref MyInstance
+
+    # our EC@ security group
+    InstanceSecurityGroup:
+      Type: 'AWS::EC2::SecurityGroup'
+      Properties:
+        GroupDescription: Enable SSH access via port 22
+        SecurityGroupIngress:
+          - IpProtocol: tcp
+            FromPort: '22'
+            ToPort: '22'
+            CidrIp: 0.0.0.0/0
   ```
+
+### CloudFormation Resources
+#### What are resources?
+  - Resources are the core of your CloudFormation template (MANDATORY)
+  - They represent the different AWS Components that will be created and configured
+  - Resources are declared and can reference each other
+  - AWS figures out creation, updates and deletes of resources for us
+  - There are over 224 types of resources
+  - Resource types identifiers are of the form:
+  - **AWS::aws-product-name::data-type-name**
+
+#### How do I find resource documentation?
+  - All the resources can be found here:
+    - https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-template-resource-type-ref.html
+  - EC2 example here
+    - https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-ec2-instance.html
+
+#### FAQ for resources
+  - Can I create a dynamic amount of resources?
+  - No, you can't. Everything in the CloudFormation template has to be declared. You can't perform code generation there
+  - Is every AWS service supported?
+  - Almost. Only a select few niches are not there yet
+  - You can work around that using AWS Lambda Custom Resources
