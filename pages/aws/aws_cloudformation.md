@@ -84,8 +84,8 @@ folder: aws
 ### YAML Crash Course
   - Key Value paris
   - Nested Objects
-  - Support Arrays (-)
-  - Multi line strings (|)
+  - Support Arrays
+  - Multi line strings
   - Can include comments
 ```bash
 Parameters:
