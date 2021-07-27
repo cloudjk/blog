@@ -64,7 +64,8 @@ folder: aws
     - Read only
     - Great for dynamic content that needs to be available at low-latency in few regions
 
-### CloudFront Caching & Caching Invalidations
+### CloudFront Caching
+#### CloudFront Caching & Caching Invalidations
   - Cache based on
     - Headers
     - Session Cookies
@@ -75,5 +76,48 @@ folder: aws
   - You can invalidate part of the cache using the CreateInvalidation API
   - {% include image.html file="caching.png" %}
 
-### CloudFront - Maximize cache hits by separating static and dynamic distributions
+#### CloudFront - Maximize cache hits by separating static and dynamic distributions
   - {% include image.html file="maximize_cache.png" %}
+
+### CloudFront Signed URL / Signed Cookies
+
+#### Overview
+  - You want to distribute paid shared content to premium users over the world
+  - We can use CloudFront Signed URL / Cookie. We attach a policy with:
+    - Includes URL expiration
+    - Includes IP ranges to access the data from
+    - Trusted signers(which AWS accounts can create signed URLs)
+  - How long should the URL be valid for?
+    - Shared content (movie, music): make it short(a few minutes)
+    - Private content (private to the user): you can make it last for years
+  - Signed URL = access to individual files (one signed URL per file)
+  - Signed Cookies = access to multiple files (one signed cookie for many files)
+
+#### CloudFront Signed URL Diagram
+  - {% include image.html file="cloudfront_signed_url.png" %}
+
+#### CloudFront Signed URL vs S3 Pre-Signed URL
+  - CloudFront Signed URL:
+    - Allow access to a path, no matter the origin
+    - Account wide key-pair, only the root can manage it
+    - Can filter by IP, path, date, expiration
+    - can leverage caching features
+    - {% include image.html file="cloudfront_signed_url.png" %}
+  - S3 Pre-Signed URL:
+    - Issue a request as the person who pre-signed the URL
+    - Uses the IAM key of the signing IAM principal
+    - Limited lifetime
+    - {% include image.html file="s3_presigned_url.png" %}
+
+#### CloudFront Signed URL Process
+  - Two types of signers:
+    - Either a trusted key group (recommended)
+      - Can leverage APIs to create and rotate keys (and IAM for API security)
+    - An AWS Account that contains a CloudFront Key Pair
+      - Need to manage keys using the root account and the AWS console
+      - Not recommended because you shouldn't use the root account for this
+  - In your CloudFront distribution, create one or more trusted key groups
+  - You generate your own public/private key
+    - The private key is used by your applications (e.g.EC2) to sign URLs
+    - The public key(uploaded) is used by CloudFront to verify URLs
+  - 
