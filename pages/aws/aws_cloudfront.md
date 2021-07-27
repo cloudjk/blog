@@ -120,4 +120,42 @@ folder: aws
   - You generate your own public/private key
     - The private key is used by your applications (e.g.EC2) to sign URLs
     - The public key(uploaded) is used by CloudFront to verify URLs
-  - 
+
+### CloudFront - Advanced
+#### CloudFront Pricing
+  - CloudFront Edge locations are all around the world
+  - The cost of data out per edge location varies
+  - {% include image.html file="cloudfront-pricing.png" %}
+
+#### CloudFront - Price Classes
+  - You can reduce the number of edge locations for cost reduction
+  - Three price classes
+    - 1. Price Class All: all regions - best performance
+    - 2. Price Class 200: most regions, but excludes the most expensive regions
+    - 3. Price Class 100: only the least expensive regions
+    - {% include image.html file="cloudfront-price-classes.png" %}
+    - {% include image.html file="cf-price-class.png" %}
+
+#### CloudFront - Multiple Origin
+  - To route to different kind of origins based on the content type
+  - Based on path pattern:
+    - /images/*
+    - /api/*
+    - /*
+    - {% include image.html file="multiple_origin.png" %}
+
+#### CloudFront - Origin Groups
+  - To increase high-availability and do **failover**
+  - Origin Group: one primary and one secondary origin
+  - If the primary origin fails, the second one is used
+  - {% include image.html file="origin_groups.png" %}
+
+#### CloudFront - Field Level Encryption
+  - Protect user sensitive information through application stack
+  - Adds an additional layer of security along with HTTPS
+  - Sensitive information encrypted at the edge close to user
+  - Uses asymmetric encryption
+  - Usage:
+    - Specify set of fields in POST requests that you want to be encrypted (up to 10 fields)
+    - Specify the public key to encrypt them
+  - {% include image.html file="cf_filed_level_encryption.png" %}
