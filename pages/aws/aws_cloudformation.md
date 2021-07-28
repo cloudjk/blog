@@ -296,4 +296,122 @@ folder: aws
         Condition: CreateProdResources
     ```
 
-    
+### CloudFormation Intrinsic Functions
+
+#### Must-Know Intrinsic Functions
+  - Ref
+  - Fn::GetAtt
+  - Fn::FindInMap
+  - Fn::ImportValue
+  - Fn::Join
+  - Fn::Sub
+  - Condition Functions (Fn::If, Fn::Not, Fn::Equals, etc...)
+
+#### Fn::Ref
+  - The Fn::Ref function can be leveraged to reference
+    - Parameters => returns the **value** of the parameter
+    - Resources => returns the **physical ID** of the underlying resources (e.g.EC2 ID)
+  - The shorthand for this in YAML is !Ref
+  - 
+    ```yaml
+    DbSubnet1:
+      Type: AWS::EC2::Subnet
+      Properties:
+        VpcId: !Ref MyVPC
+    ```
+
+#### Fn:GetAtt
+  - Attributes are attached to any resources you create
+  - To know the attributes of your resources, the best place to look at is the **documentation**
+  - For example: the AZ of an EC2 machine!
+  - 
+    ```yaml
+    Resources:
+      EC2Instance:
+        Type: "AWS::EC2::Instance"
+        Properties:
+          ImageId: ami-1234567
+          InstanceType: t2.micro
+    ```
+  -  
+    ```yaml
+    NewVolume:
+      Type: "AWS::EC2::Volume"
+      Condition: CreateProdResources
+      Properties:
+        Size: 100
+        AvailabilityZone:
+          !GetAtt EC2Instance.AvailabilityZone
+    # OR
+    NewVolume:
+      Type: "AWS::EC2::Volume"
+      Condition: CreateProdResources
+      Properties:
+        Size: 100
+        AvailabilityZone:
+          !GetAtt:
+            - EC2Instance
+            - AvailabilityZone
+    ```
+
+#### Fn:FindInMap : Accessing Mapping Values
+  - We use Fn:FindInMap to return a named value from a specific key
+  - !FindInMap [ MapName, TopLevelKey, SecondLevelKey ]
+  - {% include image.html file="findmap.png" %}
+
+#### Fn::ImportValue
+  - Import values that are exported in other templates
+  - For this, we use the Fn::ImportValue function
+  - 
+    ```yaml
+    Resources:
+      MySecureInstance:
+        Type: AWS::EC2::Instance
+        Properties:
+          AvailabilityZone: us-east-1a
+          ImageId: ami-a4c7edb2
+          InstanceType: t2.micro
+          SecurityGroups:
+            - !ImportValue SSHSecurityGroup
+    ```
+
+#### Fn::Join
+  - Join values with a delimiter
+  - 
+    ```yaml
+    !Join [ delimiter, [comma-delimited list of values] ]
+    ```
+  - This creates "a:b:c"
+  - 
+    ```yaml
+    !Join [":", [a, b, c]]
+    ```
+
+#### Function Fn::Sub
+  - Fn::Sub or !Sub as a shorthand is used to substitute variables from a text. It's a very handy function that will allow you to fully customize your templates
+  - For example, you can combine Fn::Sub with References or AWS Pseudo variables!
+  - **String** must contain  ${VariableName} and will substitute them
+  - 
+    ```yaml
+    !Sub 'arn:aws:ec2:${AWS::Region}:${AWS::AccountId}:vpc/${vpc}'
+    ```
+    ```yaml
+    !Sub 
+      - 'arn:aws:s3:::${Bucket}/*'
+      - { Bucket: Ref MyBucket }
+    ```
+
+#### Condition Functions
+
+  - 
+    ```yaml
+    Conditions:
+      CreateProdResources: !Equals [!Ref EnvType, prod]
+    ```
+  - The logical ID is for you to choose. It's how you name condition
+  - The intrinsic function (logical) can be any of the following:
+    - Fn::And
+    - Fn::Equals
+    - Fn::If
+    - Fn::Not
+    - Fn::Or
