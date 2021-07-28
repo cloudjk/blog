@@ -198,11 +198,35 @@ folder: aws
 #### Concept: Pseudo Parameters
   - AWS offers us pseudo parameters in any CloudFormation template
   - These can be used at any time and are enabled by default
-  |    Reference Value|Example Return Value|
-  |-------------------|--------------------|
-  |AWS::AccountId|1234567890|
-  |AWS::NotificationARNs|[arn:aws:sns:us-east-1:123456789015:MyTopic]|
-  |AWS::NoValue|Does not return a value|
-  |AWS::Region|us-east-2|
-  |AWS::StackId|arn:aws:cloudformation:us-east-1:12345644789012:stack/MyStack/1c2fa650-54sdf5adfs-s5df44sd|
-  |AWS::Region|us-east-2|
+  - 
+    |Reference Value|Example Return Value|
+    | ------ |--- |
+    |AWS::AccountId|1234567890|
+    |AWS::NotificationARNs|[arn:aws:sns:us-east-1:123456789015:MyTopic]|
+    |AWS::NoValue|Does not return a value|
+    |AWS::Region|us-east-2|
+    |AWS::StackId|arn:aws:cloudformation:us-east-1:12345644789012:stack/MyStack/1c2fa650-54sdf5adfs-s5df44sd|
+    |AWS::Region|us-east-2|
+
+### CloudFormation Mappings
+
+#### What are mappings?
+  - Mappings are **fixed variables** within your CloudFormation Template
+  - They're very handy to differentiate between different environments (dev vs prod), regions (AWS region), AMI types, etc
+  - All the values are **hardcoded** within the Template
+  - Example: {% include image.html file="mappings.png" %}
+
+#### When would you use mappings vs parameters?
+  - Mappings are great when you know in advance all the values that can be taken and that they can be deduced from variables such as
+    - Region
+    - Availability Zone
+    - AWS Account
+    - Environment (dev vs prod)
+    - Etc...
+  - They allow safer control over the template
+  - Use parameters when the values are really user specific
+
+#### Fn::FindInMap : Accessing Mapping Values
+  - We use Fn:FindInMap to return a named value from a specific key
+  - !FindInMap [MapName, TopLevelKey, SecondLevelKey]
+  - {% include image.html file="findmap.png" %}
