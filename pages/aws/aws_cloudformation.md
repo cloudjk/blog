@@ -144,3 +144,65 @@ folder: aws
   - Is every AWS service supported?
   - Almost. Only a select few niches are not there yet
   - You can work around that using AWS Lambda Custom Resources
+
+### CloudFormation Parameters
+
+#### What are parameters?
+  - Parameters are a way to provide inputs to your AWS CloudFormation template
+  - They're important to know about if:
+    - You want to reuse your templates across the company
+    - Some inputs can not be determined ahead of time
+  - Parameters are extremely powerful, controlled and can prevent errors from happening in your templates thanks to types
+
+#### When should you use a parameter?
+  - Ask yourself this:
+    - Is this CloudFormation resource configuration likely to change in the future?
+    - If so, make it a parameter
+  - You won't have to re-upload a template to change its content
+    - 
+      ```yaml
+      Parameters:
+        SecurityGroupDescription:
+          Description: Security Group Description
+          (Simple parameter)
+          Type: String
+      ```
+
+#### Parameters Settings
+  - Parameters can be controlled by all these settings:
+  - 
+    ```yaml
+      - Type:
+        - String
+        - Number
+        - CommaDelimitedList
+        - List<Type>
+        - AWS Parameter (to help catch invalid values - match against existing values in the AWS Account)
+      - Description
+      - Constraints
+      - ConstraintDescription (String)
+      - Min/MaxLength
+      - Min/MaxVAlue
+      - Defaults
+      - AllowedValues (array)
+      - AllowedPattern (regexp)
+      - NoEcho (Boolean)
+    ```
+
+#### How to Reference a Parameter
+  - The Fn::Ref function can be leveraged to reference parameters or AWS resources
+  - Parameters can be used anywhere in a template
+  - The shorthand for this in YAML is !Ref
+  - The function can also reference other elements within the template
+
+#### Concept: Pseudo Parameters
+  - AWS offers us pseudo parameters in any CloudFormation template
+  - These can be used at any time and are enabled by default
+  |    Reference Value|Example Return Value|
+  |-------------------|--------------------|
+  |AWS::AccountId|1234567890|
+  |AWS::NotificationARNs|[arn:aws:sns:us-east-1:123456789015:MyTopic]|
+  |AWS::NoValue|Does not return a value|
+  |AWS::Region|us-east-2|
+  |AWS::StackId|arn:aws:cloudformation:us-east-1:12345644789012:stack/MyStack/1c2fa650-54sdf5adfs-s5df44sd|
+  |AWS::Region|us-east-2|
