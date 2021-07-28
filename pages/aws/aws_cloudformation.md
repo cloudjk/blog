@@ -269,3 +269,31 @@ folder: aws
           SecurityGroups:
             - !ImportValue SSHSecurityGroup
     ```
+
+### CloudFormation Conditions
+
+#### How to define a condition?
+  - 
+    ```yaml
+    Conditions:
+      CreateProdResources: !Equals [ !Ref EnvType, prod ]
+    ```
+  - The logical ID is for you to choose. It's how you name condition
+  - The intrinsic function (logical) can be any of the following:
+    - Fn::And
+    - Fn::Equals
+    - Fn::If
+    - Fn::Not
+    - Fn::Or
+
+#### Using a Condition
+  - Conditions can be applied to resources/outputs/etc...
+  - 
+    ```yaml
+    Resources:
+      MountPoint:
+        Type: "AWS::EC2::VolumeAttachment"
+        Condition: CreateProdResources
+    ```
+
+    
