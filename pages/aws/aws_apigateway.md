@@ -76,7 +76,65 @@ folder: aws
 #### Canary Deployment
   - Possibility to enable canary deployments for any stage (usually prod)
   - Choose the % of traffic the canary channel receives
+  - {% include image.html file="canary_deployment.png" %}
   - Metrics & Logs are separate (for better monitoring)
   - Possibility to override stage variables for canary
   - This is blue/green deployment with AWS Lambda & API Gateway
 
+### API Gateway Integration Types & Mappings
+
+#### Integration Types
+  - Integration Type MOCK
+    - API Gateway returns a response without sending the request to the backend
+  - Integration Type HTTP/AWS (Lambda & AWS Services)
+    - You must configure both the integration request and integration response
+    - Setup data mapping using **mapping templates** for the request & response
+    - {% include image.html file="integration_type_http_Aws.png" %}
+  - Integration Type AWS_PROXY (Lambda Proxy):
+    - Incoming request from the client is the input to Lambda
+    - The function is responsible for the logic of request/response
+    - No mapping template, headers, query string parameters ... are passed as arguments
+    - {% include image.html file="aws_proxy.png" %}
+  - Integration Type HTTP_PROXY
+    - No mapping template
+    - The HTTP request is passed to the backend
+    - The HTTP response from the backend is forwarded by API Gateway
+    - {% include image.html file="http_proxy.png" %}
+    
+#### Mapping Template (AWS & HTTP Integration)
+  - Mapping templates can be used to modify request / responses
+  - Rename / Modify query string parameters
+  - Modify body content
+  - Add headers
+  - User Velocity Template Language (VTL): for loop, it etc...
+  - Filter output results (remove unnecessary data)
+
+#### Mapping Example: JSON to XML with SOAP
+  - SOAP API are XML based, whereas REST API are JSON based
+    - {% include image.html file="json_xml.png" %}
+  - In this case, API Gateway should:
+    - Extract data from the request: either path, payload or header
+    - Build SOAP message based on request data (mapping template)
+    - CALL SOAP service and receive XML response
+    - Transform XML response to desired format (like JSON) and respond to the user
+
+#### Mapping Example: Query String parameters
+  - {% include image.html file="query_string_parameters.png" %}
+
+### API Gateway Caching
+
+#### Caching API Responses
+  - Caching reduces the number of calls made to the backend
+  - Default TTL (time to live) is 300 seconds (min: 0s, max: 3600s)
+  - Caches are defined per stage
+  - Possible to override cache settings per method
+  - Cache encryption option
+  - Cache capacity between 0.5GB to 237GB
+  - Cache is expensive, make sense in production, may not make sense in dev / test
+  - {% include image.html file="caching_api.png" %}
+
+#### API Gateway Cache Invalidation
+  - Able to flush the entire cache(invalidate it) immediately
+  - Clients can invalidate the cache with **header:Cache-Contro:max-age=0** (with proper IAM authorization)
+  - If you don't impose an InvalidateCache policy (or choose the Require authorization check box in the console), any client can invalidate the API cache
+  - {% include image.html file="api_gw_cache.png" %}
