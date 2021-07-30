@@ -143,6 +143,10 @@ entries:
       url: /aws_cloudformation.html
       output: web, pdf
 
+    - title: AWS API Gateway
+      url: /aws_apigateway.html
+      output: web, pdf
+
   - title: Linux
     output: web, pdf
     folderitems:
