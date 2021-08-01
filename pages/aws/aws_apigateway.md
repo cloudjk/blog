@@ -199,3 +199,17 @@ folder: aws
     - 502: Bad Gateway Exception, usually for an incompatible output returned from a Lambda proxy integration backend and occasionally for out-of-order invocations due to heavy loads
     - 503: Service Unavailable Exception
     - 504: Integration Failure - e.g. Endpoint Request Timed-out Exception (API Gateway requests time out after 29 second maximum)
+
+### API Gateway - CORS (Cross-Origin Resource Sharing)
+
+#### CORS Overview
+  - CORS must be enabled when you receive API calls from another domain
+  - The OPTIONS pre-flight request must contain the following headers:
+    - Access-Control-Allow-Methods
+    - Access-Control-Allow-Headers
+    - Access-Control-Allow-Origin
+  - **CORS can be enabled through the console**
+
+#### CORS - Enabled on the API Gateway
+  - {% include image.html file="cors.png" %}
+
