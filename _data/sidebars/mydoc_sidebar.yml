@@ -99,12 +99,16 @@ entries:
     output: web, pdf
     folderitems:
 
-    - title: 6.0 Release notes
-      url: /mydoc_release_notes_60.html
+    - title: Typescript Import Json
+      url: /typescript_import_json.html
       output: web, pdf
 
-    - title: 5.0 Release notes
-      url: /mydoc_release_notes_50.html
+    - title: Typescript Indexing Objects
+      url: /typescript_indexing_objects.html
+      output: web, pdf
+
+    - title: Typescript SOLID Principles
+      url: /typescript_solid_principle.html
       output: web, pdf
 
   - title: AWS

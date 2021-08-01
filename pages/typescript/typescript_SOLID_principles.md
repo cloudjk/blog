@@ -1,5 +1,5 @@
 ---
-title: SOLID Principles
+title: Typescript SOLID Principles
 sidebar: mydoc_sidebar
 permalink: typescript_solid_principle.html
 folder: typescript
