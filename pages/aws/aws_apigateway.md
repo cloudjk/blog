@@ -269,4 +269,44 @@ folder: aws
     - No usage plans and API keys
   - REST APIs
     - All features (except Native OpenID Connect / OAuth 2.0)
-  - {% include image.html file="http_rest.png" %}
+  - {% include image.html file="http_rest.png" %} 
+
+### API Gateway - WebSocket API
+
+#### WebSocket API Overview
+  - What is WebSocket?
+    - Two-way interactive communication between a user's brwoser and a server
+    - Server can push information to the client
+    - This enables **stateful** application use cases
+  - WebSocket APIs are often used in real-time applications such as chat applications, collaboration platforms, multiplayer games and financial trading platforms
+  - Works with AWS Services (Lambda, DynamoDB) or HTTP endpoints
+  - {% include image.html file="websocket_api_overview.png" %} 
+
+#### Connecting to the API
+  - WebSocket URL
+  - wss://[some-unique-id].execute-api.[region].amazonaws.com/[stage-name]
+  - {% include image.html file="websocket_url.png" %} 
+
+#### Client to Server Messaging: **ConnectionID is re-used**
+  - WebSocket URL
+  - wss//abcdef.execute-api.us-west-1.amazonaws.com/dev
+  - {% include image.html file="server_messaging.png" %} 
+
+#### Server to Client Messaging
+  - WebSocket URL
+  - wss//abcdef.execute-api.us-west-1.amazonaws.com/dev
+  - {% include image.html file="server_to_client_messaging.png" %} 
+
+#### Connection URL Operations
+  - Connection URL
+  - wss//abcdef.execute-api.us-west-1.amazonaws.com/dev/@connections/connectionId
+  - {% include image.html file="connection_url.png" %} 
+
+#### WebSocket API Routing
+  - Incoming JSON messages are routed to different backend
+  - If no routes => sent to $default
+  - You request a **route selection expression** to select the field on JSON to route from
+  - Sample expression: $request.body.action
+  - The result is evaluated against the route keys available in your API Gateway
+  - The route is then connected to the backend you've setup through API Gateway
+  - {% include image.html file="websocket_routing.png" %} 
