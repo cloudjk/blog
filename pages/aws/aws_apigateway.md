@@ -309,4 +309,12 @@ folder: aws
   - Sample expression: $request.body.action
   - The result is evaluated against the route keys available in your API Gateway
   - The route is then connected to the backend you've setup through API Gateway
-  - {% include image.html file="websocket_routing.png" %} 
+  - {% include image.html file="websocket_routing.png" %}
+  - Use already built websocket chat app in Lambda
+
+### API Gateway Architecture
+  - Create a single interface for all the micro-services in your company
+  - Use API endpoints with various resources
+  - Apply a simple domain name and SSL certificate
+  - Can apply forwarding and transformation rules at the API Gateway level
+  - {% include image.html file="apigw_arch.png" %}
