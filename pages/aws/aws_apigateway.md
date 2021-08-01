@@ -261,3 +261,12 @@ folder: aws
     - You manage your own user pool (can be baked by Facebook, Google login etc...)
     - No need to write any custom code
     - Must implement authorization in the backend
+
+### API Gateway - HTTP API vs REST API
+  - HTTP APIs
+    - low-latency, cost-effective AWS Lambda proxy, HTTP proxy APIs and private integration (no data mapping)
+    - support OIDC(Open ID Connect) and OAuth2.0 authorization and built-in support for CORS
+    - No usage plans and API keys
+  - REST APIs
+    - All features (except Native OpenID Connect / OAuth 2.0)
+  - {% include image.html file="http_rest.png" %}
