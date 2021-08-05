@@ -151,6 +151,10 @@ entries:
       url: /aws_apigateway.html
       output: web, pdf
 
+    - title: AWS Cloud Development Kit(CDK)
+      url: /aws_cdk.html
+      output: web, pdf
+
   - title: Linux
     output: web, pdf
     folderitems:
