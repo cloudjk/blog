@@ -155,6 +155,10 @@ entries:
       url: /aws_cdk.html
       output: web, pdf
 
+    - title: AWS Cognito
+      url: /aws_cognito.html
+      output: web, pdf
+
   - title: Linux
     output: web, pdf
     folderitems:
