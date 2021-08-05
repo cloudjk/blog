@@ -81,4 +81,28 @@ folder: aws
 #### Cognito Identity Pools - DynamoDB
 - {% include image.html file="cip_dynamo_db.png" %}
 
+### Cognito User Pools vs Identity Pools
+#### Cognito User Pools:
+- Database of users for your web and mobile application
+- Allows to federate logins through Public Social, OIDC, SAML ...
+- Can customize the hosted UI for authentication (including the log)
+- Has triggers with AWS Lambda during the authentication flow
+#### Cognito Identity Pools:
+- Obtain AWS credentials for your users
+- Users can login through Public Social, OIDC, SAML & Cognito User Pools
+- Users can be unauthenticated(guests)
+- Users are mapped to IAM roles & policies, can leverage policy variables
+#### CUP + CIP = manage user/password + access AWS services
 
+#### Cognito Identity Pools - Diagram with CUP
+- {% include image.html file="cip_diagram_w_cup.png" %}
+
+### Cognito Sync
+- Deprecated - user AWS AppSync now
+- Store preferences, configuration, state of app
+- Corss device synchronization (any platform - iOS, Android, etc...)
+- Offline capability (synchronization when back online)
+- Store data in datasets (up to 1MB), up to 20 datasets to synchronize
+- Push Sync: silently notify across all devices when identity data changes
+- Cognito Stream: stream data from Cognito into Kinesis
+- Cognito Events: execute Lambda functions in response to events
