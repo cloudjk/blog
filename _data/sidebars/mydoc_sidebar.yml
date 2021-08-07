@@ -159,6 +159,10 @@ entries:
       url: /aws_cognito.html
       output: web, pdf
 
+    - title: AWS CloudWatch
+      url: /aws_cloudwatch.html
+      output: web, pdf
+
   - title: Linux
     output: web, pdf
     folderitems:
