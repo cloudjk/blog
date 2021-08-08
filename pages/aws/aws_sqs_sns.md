@@ -75,3 +75,6 @@ folder: aws
   - Access Controls: IAM policies to regulate access to the SQS API
   - SQS Access Policies (similar to S# bucket policies)
   - Useful for allowing other services (SNS, S3...) to write to an SQS queue
+
+### SQS Queue Access Policy
+- {% include image.html file="access_policy.png" %}
