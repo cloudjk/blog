@@ -162,4 +162,3 @@ folder: aws
   - Integration: SQS, SNS, Kinesis, Data Streams, Kinesis Data Firehose
   - Orchestration: Step Functions, CodePipeline, CodeBuild
   - Maintenance: SSM, EC2 Actions
-  - 
