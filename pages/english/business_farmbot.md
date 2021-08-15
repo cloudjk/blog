@@ -189,3 +189,7 @@ folder: english
 ### 빈둥대다(2)
 
     mess around / fool around
+
+### 그렇게 함으로써
+
+    In doing so,
