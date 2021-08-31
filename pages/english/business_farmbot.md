@@ -170,7 +170,7 @@ folder: english
 
     That's a great step forward
 
-### 필요하면 변경하고
+### 필요하면 변경하고    
 
     make adjustments as necessary
 
@@ -193,3 +193,47 @@ folder: english
 ### 그렇게 함으로써
 
     In doing so,
+
+### ~와 유사한
+
+    analogous to
+
+### ~을 구체화 하다
+
+    flesh something out
+
+### 모두가 같이 공유해서 동일한 정보를 갖게 하다    
+
+    keep everyone on the same page
+
+### 운명의 장난으로
+
+    by a quirk of fate
+
+### 거기서 부터 받아서 해줄래요?
+
+    Would you take over from that point?
+
+### 그때그때 봐 가며 ~을 하다
+
+    on the fly
+
+### 선제의, 예방의
+
+    preemptive
+
+### 버리다 throw away
+
+    chuck away
+
+### 팝업
+
+    prompt
+
+### 결함
+
+    glitch
+
+### 그의 상황 평가가 딱 맞았다
+
+    His assessment of the situation was spot on.
