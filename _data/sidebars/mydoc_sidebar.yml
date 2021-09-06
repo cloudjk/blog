@@ -234,6 +234,14 @@ entries:
       url: /docker_basic_concept.html
       output: web, pdf
 
+  - title: CSS
+    output: web, pdf
+    folderitems:
+
+    - title: CSS Basic
+      url: /css_basic.html
+      output: web, pdf
+
   - title: English
     output: web, pdf
     folderitems:
