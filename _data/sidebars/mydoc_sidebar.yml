@@ -58,6 +58,18 @@ entries:
           output: web, pdf
           type: homepage
 
+  - title: React
+    output: web, pdf
+    folderitems:
+
+    - title: React
+      url: /react.html
+      output: web, pdf
+
+    - title: React Router
+      url: /react_router.html
+      output: web, pdf
+
   - title: Javascript
     output: web, pdf
     folderitems:
